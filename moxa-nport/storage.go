@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"io"
 	"net/http"
 	"net/url"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -103,9 +105,14 @@ func (sm *StorageManager) Store(port string, slaveID uint8, slaveName string, va
 			fmt.Printf("storage %q: write error: %v\n", dest.name, err)
 			continue
 		}
+		respBody, _ := io.ReadAll(resp.Body)
 		_ = resp.Body.Close()
 		if resp.StatusCode >= 300 {
-			fmt.Printf("storage %q: write failed status=%s\n", dest.name, resp.Status)
+			msg := strings.TrimSpace(string(respBody))
+			if msg == "" {
+				msg = resp.Status
+			}
+			fmt.Printf("storage %q: write failed status=%s body=%s\n", dest.name, resp.Status, msg)
 			continue
 		}
 	}
@@ -134,13 +141,32 @@ func buildLineProtocol(measurement string, port string, slaveID uint8, slaveName
 		b.WriteString(fmt.Sprintf("%d", v.Register))
 		b.WriteString(",register_name=")
 		b.WriteString(escapeTag(v.Name))
-		b.WriteString(" value=")
-		b.WriteString(fmt.Sprintf("%di", v.Value))
+		b.WriteString(" ")
+		b.WriteString(fieldKey(v))
+		b.WriteString("=")
+		b.WriteString(formatFieldValue(v))
 		b.WriteString(" ")
 		b.WriteString(fmt.Sprintf("%d", timestamp))
 		b.WriteByte('\n')
 	}
 	return b.String()
+}
+
+func formatFieldValue(v RegisterValue) string {
+	switch strings.ToLower(v.Type) {
+	case "float", "float32", "float64":
+		return strconv.FormatFloat(v.Value, 'f', -1, 64)
+	default:
+		return fmt.Sprintf("%di", int64(v.Value))
+	}
+}
+
+func fieldKey(v RegisterValue) string {
+	name := strings.TrimSpace(v.Name)
+	if name == "" {
+		name = fmt.Sprintf("register_%d", v.Register)
+	}
+	return escapeTag(strings.ToLower(name))
 }
 
 func escapeTag(v string) string {

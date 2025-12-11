@@ -10,7 +10,7 @@ type RegisterValue struct {
 	Register int
 	Name     string
 	Type     string // int16 or uint16
-	Value    int64
+	Value    float64
 }
 
 // decodeKnownRegisters returns human-readable lines and structured values for a slave's known registers.
@@ -57,8 +57,8 @@ func decodeKnownRegisters(np NPortConfig, slaveID uint8, data []byte) (slaveName
 
 		switch typ {
 		case "uint16":
-			val := int64(valueU16)
-			lines = append(lines, fmt.Sprintf("reg=%d name=%s uint16=%d", reg.Register, reg.RegisterName, val))
+			val := float64(valueU16)
+			lines = append(lines, fmt.Sprintf("reg=%d name=%s uint16=%d", reg.Register, reg.RegisterName, int64(val)))
 			values = append(values, RegisterValue{
 				Register: reg.Register,
 				Name:     reg.RegisterName,
@@ -66,8 +66,8 @@ func decodeKnownRegisters(np NPortConfig, slaveID uint8, data []byte) (slaveName
 				Value:    val,
 			})
 		default: // int16 or unknown -> treat as int16
-			val := int64(int16(valueU16))
-			lines = append(lines, fmt.Sprintf("reg=%d name=%s int16=%d", reg.Register, reg.RegisterName, val))
+			val := float64(int16(valueU16))
+			lines = append(lines, fmt.Sprintf("reg=%d name=%s int16=%d", reg.Register, reg.RegisterName, int64(val)))
 			values = append(values, RegisterValue{
 				Register: reg.Register,
 				Name:     reg.RegisterName,

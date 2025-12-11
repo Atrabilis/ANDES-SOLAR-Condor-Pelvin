@@ -10,6 +10,8 @@ import (
 	"time"
 )
 
+var errHandlerComplete = errors.New("frame handler complete")
+
 // runPassiveListeningTest connects and prints frames observed on the socket without sending polls.
 func runPassiveListeningTest(ctx context.Context, np NPortConfig, collector *SlaveCollector, storage *StorageManager, storeCoord *StoreCoordinator, subMode string) {
 	addr := fmt.Sprintf("%s:%d", np.Host, np.Port)
@@ -25,7 +27,7 @@ func runPassiveListeningTest(ctx context.Context, np NPortConfig, collector *Sla
 		maxFrame = 4096
 	}
 
-	handler := newFrameHandler(np, subMode)
+	handler := newFrameHandler(np, subMode, storage, storeCoord)
 
 	for {
 		if ctx.Err() != nil {
@@ -45,6 +47,11 @@ func runPassiveListeningTest(ctx context.Context, np NPortConfig, collector *Sla
 
 		fmt.Printf("[%s] connected to %s\n", np.Name, addr)
 		if err := streamFrames(ctx, conn, np, idleGap, readBufSize, maxFrame, collector, storage, storeCoord, handler); err != nil {
+			if errors.Is(err, errHandlerComplete) {
+				fmt.Printf("[%s] handler completed; stopping acquisition\n", np.Name)
+				_ = conn.Close()
+				return
+			}
 			fmt.Printf("[%s] connection closed: %v\n", np.Name, err)
 		}
 
@@ -74,8 +81,8 @@ func streamFrames(ctx context.Context, conn net.Conn, np NPortConfig, idleGap ti
 			if netErr, ok := err.(net.Error); ok && netErr.Timeout() {
 				if len(frame) > 0 {
 					summary := logFrame(np, frame, collector, storage, storeCoord)
-					if handler != nil {
-						handler.HandleFrame(frame, summary)
+					if handler != nil && handler.HandleFrame(frame, summary) {
+						return errHandlerComplete
 					}
 					frame = frame[:0]
 				} else if np.ConnectionKeepLog {
@@ -92,8 +99,8 @@ func streamFrames(ctx context.Context, conn net.Conn, np NPortConfig, idleGap ti
 		frame = append(frame, buf[:n]...)
 		if len(frame) >= maxFrame {
 			summary := logFrame(np, frame, collector, storage, storeCoord)
-			if handler != nil {
-				handler.HandleFrame(frame, summary)
+			if handler != nil && handler.HandleFrame(frame, summary) {
+				return errHandlerComplete
 			}
 			frame = frame[:0]
 		}

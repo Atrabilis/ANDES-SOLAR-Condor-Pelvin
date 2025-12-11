@@ -1,5 +1,5 @@
 mode: passive-listening
-sub_mode: test # test, store 
+sub_mode: store # test, store 
 test_duration_seconds: 300
 test_only_valid_crc: true
 
@@ -24,7 +24,6 @@ nports:
     detected_slaves:
       - 1
 
-
 storage:
 
   local:
@@ -34,7 +33,7 @@ storage:
       db-token: thZTiVeCpDVzLkmizOFiGGqgl2xKzpfHV2QH_vNFXINZZWBAGyZgMR4uNKJX2URWTy7uHqD_lLbtIb3Khqbq-Q==
       db-org: atamostec
       db-bucket: condor_pelvin
-      db-measurement: condor_pelvin-np5232i_9147-test
+      db-measurement: condor_pelvin-np5232i_9147
 
   remotes:
     - name: "ua"
@@ -43,4 +42,4 @@ storage:
       db-token: piDbFR_bfRWO5Epu1IS96WbkNpSZZCYgwZZR29PcwUsxXwKdIyLMhVAhU4-5ohWeXIsX7Dp_X-WiPIDx0beafg==
       db-org: atamostec
       db-bucket: andes_solar_condor_pelvin
-      db-measurement: condor_pelvin-np5232i_9147-test
+      db-measurement: condor_pelvin-np5232i_9147

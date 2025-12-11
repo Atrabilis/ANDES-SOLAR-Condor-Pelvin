@@ -10,101 +10,133 @@ import (
 const dustIQExpectedFrames = 23
 
 type dustIQHandler struct {
-	port  string
-	cycle [][]byte
+	port         string
+	mode         string
+	cycle        [][]byte
+	currentSlave uint8
+	storage      *StorageManager
 }
 
 type dustIQSpec struct {
 	name      string
 	converter func([]byte) (float64, bool)
-}
-
-type dustIQValue struct {
-	name  string
-	value float64
+	valueType string
 }
 
 var dustIQSpecs = []dustIQSpec{
-	{name: "ir_device_type", converter: dustIQUint16},
-	{name: "ir_datamodel_version", converter: dustIQUint16},
-	{name: "ir_software_version", converter: dustIQUint16},
-	{name: "ir_batch_number", converter: dustIQUint16},
-	{name: "ir_serial_number", converter: dustIQUint16},
-	{name: "ir_hardware_version", converter: dustIQUint16},
-	{name: "ir_soiling_ratio_sensor1", converter: dustIQUint16Div10},
-	{name: "ir_tr_loss_sensor1", converter: dustIQInt16Div10},
-	{name: "ir_soiling_ratio_sensor2", converter: dustIQUint16Div10},
-	{name: "ir_tr_loss_sensor2", converter: dustIQInt16Div10},
-	{name: "", converter: nil}, // reserved register in the current cycle mapping
-	{name: "ir_backpanel_temp_c", converter: dustIQBackpanelTemp},
-	{name: "ir_calibration_year", converter: dustIQUint16},
-	{name: "ir_calibration_month", converter: dustIQUint16},
-	{name: "ir_calibration_day", converter: dustIQUint16},
-	{name: "ir_tilt_x_direction", converter: dustIQInt16Div10},
-	{name: "ir_tilt_y_direction", converter: dustIQInt16Div10},
-	{name: "ir_calibration_flags", converter: dustIQUint16},
-	{name: "ir_device_voltage", converter: dustIQDeviceVoltage},
-	{name: "ir_operational_mode", converter: dustIQInt16},
-	{name: "ir_dust_tilt_sensor_1", converter: dustIQUint16},
-	{name: "ir_dust_tilt_sensor_2", converter: dustIQUint16},
-	{name: "placeholder_22", converter: dustIQUint16},
+	{name: "ir_device_type", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_datamodel_version", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_software_version", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_batch_number", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_serial_number", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_hardware_version", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_soiling_ratio_sensor1", converter: dustIQUint16Div10, valueType: "float"},
+	{name: "ir_tr_loss_sensor1", converter: dustIQInt16Div10, valueType: "float"},
+	{name: "ir_soiling_ratio_sensor2", converter: dustIQUint16Div10, valueType: "float"},
+	{name: "ir_tr_loss_sensor2", converter: dustIQInt16Div10, valueType: "float"},
+	{name: "", converter: nil, valueType: ""},
+	{name: "ir_backpanel_temp", converter: dustIQBackpanelTemp, valueType: "float"},
+	{name: "ir_calibration_year", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_calibration_month", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_calibration_day", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_tilt_x_direction", converter: dustIQInt16Div10, valueType: "float"},
+	{name: "ir_tilt_y_direction", converter: dustIQInt16Div10, valueType: "float"},
+	{name: "ir_calibration_flags", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_device_voltage", converter: dustIQDeviceVoltage, valueType: "float"},
+	{name: "ir_operational_mode", converter: dustIQInt16, valueType: "int16"},
+	{name: "ir_dust_tilt_sensor_1", converter: dustIQUint16, valueType: "uint16"},
+	{name: "ir_dust_tilt_sensor_2", converter: dustIQUint16, valueType: "uint16"},
+	{name: "placeholder_22", converter: dustIQUint16, valueType: "uint16"},
 }
 
 // NewDustIQHandler creates a handler that decodes single-register frames into DustIQ cycles.
-func NewDustIQHandler(port string) FrameHandler {
+func NewDustIQHandler(port string, subMode string, storage *StorageManager, _ *StoreCoordinator) FrameHandler {
+	mode := strings.ToLower(strings.TrimSpace(subMode))
 	return &dustIQHandler{
-		port:  port,
-		cycle: make([][]byte, 0, dustIQExpectedFrames),
+		port:    port,
+		mode:    mode,
+		storage: storage,
+		cycle:   make([][]byte, 0, dustIQExpectedFrames),
 	}
 }
 
-func (h *dustIQHandler) HandleFrame(frame []byte, summary FrameSummary) {
+func (h *dustIQHandler) HandleFrame(frame []byte, summary FrameSummary) bool {
 	if len(frame) != 7 {
-		return
+		return false
 	}
 	if summary.CRCValid == nil || !*summary.CRCValid {
-		return
+		return false
 	}
 	if summary.ByteCount == nil || *summary.ByteCount != 2 {
-		return
+		return false
 	}
 
 	value := binary.BigEndian.Uint16(frame[3:5])
 	if value == 800 {
 		if len(h.cycle) > 0 {
-			h.flush()
+			if h.flush() {
+				return true
+			}
 		}
-		h.cycle = h.cycle[:0]
+		h.resetCycle()
+		h.currentSlave = summary.SlaveID
 		h.cycle = append(h.cycle, h.copyFrame(frame))
-		return
+		return false
 	}
 
 	if len(h.cycle) == 0 {
-		return
+		return false
+	}
+	if summary.SlaveID != h.currentSlave {
+		if h.flush() {
+			return true
+		}
+		h.resetCycle()
+		return false
 	}
 	h.cycle = append(h.cycle, h.copyFrame(frame))
+	return false
 }
 
-func (h *dustIQHandler) flush() {
+func (h *dustIQHandler) flush() bool {
 	if len(h.cycle) == 0 {
-		return
+		return false
 	}
 	values, warnings, err := decodeDustIQCycle(h.cycle)
 	if err != nil {
 		fmt.Printf("[%s] dustiq: %v\n", h.port, err)
-		h.cycle = h.cycle[:0]
-		return
+		h.resetCycle()
+		return false
 	}
 
 	timestamp := time.Now().UTC().Format(time.RFC3339)
 	fmt.Printf("[%s] dustiq cycle %s\n", h.port, timestamp)
 	for _, v := range values {
-		fmt.Printf("  %s=%s\n", v.name, formatDustIQValue(v.value))
+		fmt.Printf("  %s=%s\n", v.Name, formatDustIQValue(v.Value, v.Type))
 	}
 	for _, warn := range warnings {
 		fmt.Printf("[%s] dustiq warning: %s\n", h.port, warn)
 	}
+
+	shouldStop := false
+	if h.shouldStore() && len(values) > 0 {
+		now := time.Now().UTC()
+		if h.storage != nil {
+			h.storage.Store(h.port, h.currentSlave, "", values, now)
+		}
+		shouldStop = true
+	}
+	h.resetCycle()
+	return shouldStop
+}
+
+func (h *dustIQHandler) shouldStore() bool {
+	return h.mode == "store" && h.storage != nil
+}
+
+func (h *dustIQHandler) resetCycle() {
 	h.cycle = h.cycle[:0]
+	h.currentSlave = 0
 }
 
 func (h *dustIQHandler) copyFrame(frame []byte) []byte {
@@ -113,15 +145,19 @@ func (h *dustIQHandler) copyFrame(frame []byte) []byte {
 	return dup
 }
 
-func decodeDustIQCycle(frames [][]byte) ([]dustIQValue, []string, error) {
+func decodeDustIQCycle(frames [][]byte) ([]RegisterValue, []string, error) {
 	if len(frames) < dustIQExpectedFrames {
 		return nil, nil, fmt.Errorf("incomplete cycle: expected %d frames, got %d", dustIQExpectedFrames, len(frames))
 	}
 
-	values := make([]dustIQValue, 0, dustIQExpectedFrames)
+	values := make([]RegisterValue, 0, len(dustIQSpecs))
 	var warnings []string
 	for idx, spec := range dustIQSpecs {
 		if spec.name == "" || spec.converter == nil {
+			continue
+		}
+		if idx >= len(frames) {
+			warnings = append(warnings, fmt.Sprintf("reg %d (%s) missing frame", idx, spec.name))
 			continue
 		}
 		val, ok := spec.converter(frames[idx])
@@ -129,7 +165,12 @@ func decodeDustIQCycle(frames [][]byte) ([]dustIQValue, []string, error) {
 			warnings = append(warnings, fmt.Sprintf("reg %d (%s) invalid frame", idx, spec.name))
 			continue
 		}
-		values = append(values, dustIQValue{name: spec.name, value: val})
+		values = append(values, RegisterValue{
+			Register: idx,
+			Name:     spec.name,
+			Type:     spec.valueType,
+			Value:    val,
+		})
 	}
 	return values, warnings, nil
 }
@@ -180,8 +221,17 @@ func dustIQDeviceVoltage(frame []byte) (float64, bool) {
 	return val / 1000.0, true
 }
 
-func formatDustIQValue(v float64) string {
-	s := fmt.Sprintf("%.3f", v)
+func formatDustIQValue(v float64, typ string) string {
+	switch strings.ToLower(typ) {
+	case "float":
+		return trimFloat(v)
+	default:
+		return fmt.Sprintf("%d", int64(v))
+	}
+}
+
+func trimFloat(v float64) string {
+	s := fmt.Sprintf("%.4f", v)
 	s = strings.TrimRight(s, "0")
 	s = strings.TrimRight(s, ".")
 	if s == "" {
