@@ -1,0 +1,821 @@
+devices:
+- device:
+    name: "ion_7400"
+    ip: "192.168.1.65" 
+    port: 502
+    flags:
+    slaves:
+      - name: "ion_7400"
+        slave_id: 1
+        offset: 1
+        modbus_registers:         
+          - register: 3000
+            function_code: 3
+            name: "current_a"
+            description: "Current A"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3002
+            function_code: 3
+            name: "current_b"
+            description: "Current B"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3004
+            function_code: 3
+            name: "current_c"
+            description: "Current C"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3006
+            function_code: 3
+            name: "current_n"
+            description: "Current N"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3008
+            function_code: 3
+            name: "current_g"
+            description: "Current G"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3010
+            function_code: 3
+            name: "current_avg"
+            description: "Current Average"
+            words: 2
+            datatype: "F32BE"
+            unit: "A"
+            gain: 1
+            flags:
+
+          - register: 3018
+            function_code: 3
+            name: "current_unbalance_worst"
+            description: "Current Unbalance Worst"
+            words: 2
+            datatype: "F32BE"
+            unit: "%"
+            gain: 1
+            flags:
+
+          - register: 3020
+            function_code: 3
+            name: "voltage_ll_ab"
+            description: "Voltage A-B"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3022
+            function_code: 3
+            name: "voltage_ll_bc"
+            description: "Voltage B-C"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3024
+            function_code: 3
+            name: "voltage_ll_ca"
+            description: "Voltage C-A"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3026
+            function_code: 3
+            name: "voltage_ll_avg"
+            description: "Voltage L-L Avg"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3028
+            function_code: 3
+            name: "voltage_ln_a"
+            description: "Voltage A-N"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3030
+            function_code: 3
+            name: "voltage_ln_b"
+            description: "Voltage B-N"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3032
+            function_code: 3
+            name: "voltage_ln_c"
+            description: "Voltage C-N"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3036
+            function_code: 3
+            name: "voltage_ln_avg"
+            description: "Voltage L-N Avg"
+            words: 2
+            datatype: "F32BE"
+            unit: "V"
+            gain: 1
+            flags:
+
+          - register: 3052
+            function_code: 3
+            name: "voltage_unbalance_ln_worst"
+            description: "Voltage Unbalance L-N Worst"
+            words: 2
+            datatype: "F32BE"
+            unit: "%"
+            gain: 1
+            flags:
+
+          - register: 3054
+            function_code: 3
+            name: "active_power_a"
+            description: "Active Power A"
+            words: 2
+            datatype: "F32BE"
+            unit: "W"
+            gain: 1
+            flags:
+
+          - register: 3056
+            function_code: 3
+            name: "active_power_b"
+            description: "Active Power B"
+            words: 2
+            datatype: "F32BE"
+            unit: "W"
+            gain: 1
+            flags:
+
+          - register: 3058
+            function_code: 3
+            name: "active_power_c"
+            description: "Active Power C"
+            words: 2
+            datatype: "F32BE"
+            unit: "W"
+            gain: 1
+            flags:
+
+          - register: 3060
+            function_code: 3
+            name: "active_power_total"
+            description: "Active Power Total"
+            words: 2
+            datatype: "F32BE"
+            unit: "W"
+            gain: 1
+            flags:
+
+          - register: 3062
+            function_code: 3
+            name: "reactive_power_a"
+            description: "Reactive Power A"
+            words: 2
+            datatype: "F32BE"
+            unit: "var"
+            gain: 1
+            flags:
+
+          - register: 3064
+            function_code: 3
+            name: "reactive_power_b"
+            description: "Reactive Power B"
+            words: 2
+            datatype: "F32BE"
+            unit: "var"
+            gain: 1
+            flags:
+
+          - register: 3066
+            function_code: 3
+            name: "reactive_power_c"
+            description: "Reactive Power C"
+            words: 2
+            datatype: "F32BE"
+            unit: "var"
+            gain: 1
+            flags:
+
+          - register: 3068
+            function_code: 3
+            name: "reactive_power_total"
+            description: "Reactive Power Total"
+            words: 2
+            datatype: "F32BE"
+            unit: "var"
+            gain: 1
+            flags:
+
+          - register: 3070
+            function_code: 3
+            name: "apparent_power_a"
+            description: "Apparent Power A"
+            words: 2
+            datatype: "F32BE"
+            unit: "VA"
+            gain: 1
+            flags:
+
+          - register: 3072
+            function_code: 3
+            name: "apparent_power_b"
+            description: "Apparent Power B"
+            words: 2
+            datatype: "F32BE"
+            unit: "VA"
+            gain: 1
+            flags:
+
+          - register: 3074
+            function_code: 3
+            name: "apparent_power_c"
+            description: "Apparent Power C"
+            words: 2
+            datatype: "F32BE"
+            unit: "VA"
+            gain: 1
+            flags:
+
+          - register: 3076
+            function_code: 3
+            name: "apparent_power_total"
+            description: "Apparent Power Total"
+            words: 2
+            datatype: "F32BE"
+            unit: "VA"
+            gain: 1
+            flags:
+
+          - register: 3110
+            function_code: 3
+            name: "frequency"
+            description: "frequency"
+            words: 2
+            datatype: "F32BE"
+            unit: "Hz"
+            gain: 1
+            flags:
+
+          - register: 3204
+            function_code: 3
+            name: "energy_active_delivered"
+            description: "Active Energy Delivered (Into Load)"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3208
+            function_code: 3
+            name: "energy_active_received"
+            description: "Active Energy Received (Out of Load)"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3212
+            function_code: 3
+            name: "energy_active_delivered_received_sum"
+            description: "Active Energy Delivered + Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3216
+            function_code: 3
+            name: "energy_active_delivered_minus_received"
+            description: "Active Energy Delivered - Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3220
+            function_code: 3
+            name: "energy_reactive_delivered"
+            description: "Reactive Energy Delivered"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3224
+            function_code: 3
+            name: "energy_reactive_received"
+            description: "Reactive Energy Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3228
+            function_code: 3
+            name: "energy_reactive_delivered_received_sum"
+            description: "Reactive Energy Delivered + Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3232
+            function_code: 3
+            name: "energy_reactive_delivered_minus_received"
+            description: "Reactive Energy Delivered - Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3236
+            function_code: 3
+            name: "energy_apparent_delivered"
+            description: "Apparent Energy Delivered"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3240
+            function_code: 3
+            name: "energy_apparent_received"
+            description: "Apparent Energy Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3244
+            function_code: 3
+            name: "energy_apparent_delivered_received_sum"
+            description: "Apparent Energy Delivered + Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3248
+            function_code: 3
+            name: "energy_apparent_delivered_minus_received"
+            description: "Apparent Energy Delivered - Received"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3256
+            function_code: 3
+            name: "energy_active_q1"
+            description: "Active Energy in Quadrant I"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3260
+            function_code: 3
+            name: "energy_active_q2"
+            description: "Active Energy in Quadrant II"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3264
+            function_code: 3
+            name: "energy_active_q3"
+            description: "Active Energy in Quadrant III"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3268
+            function_code: 3
+            name: "energy_active_q4"
+            description: "Active Energy in Quadrant IV"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3272
+            function_code: 3
+            name: "energy_reactive_q1"
+            description: "Reactive Energy in Quadrant I"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3276
+            function_code: 3
+            name: "energy_reactive_q2"
+            description: "Reactive Energy in Quadrant II"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3280
+            function_code: 3
+            name: "energy_reactive_q3"
+            description: "Reactive Energy in Quadrant III"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3284
+            function_code: 3
+            name: "energy_reactive_q4"
+            description: "Reactive Energy in Quadrant IV"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3288
+            function_code: 3
+            name: "energy_apparent_q1"
+            description: "Apparent Energy in Quadrant I"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3292
+            function_code: 3
+            name: "energy_apparent_q2"
+            description: "Apparent Energy in Quadrant II"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3296
+            function_code: 3
+            name: "energy_apparent_q3"
+            description: "Apparent Energy in Quadrant III"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3300
+            function_code: 3
+            name: "energy_apparent_q4"
+            description: "Apparent Energy in Quadrant IV"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3358
+            function_code: 3
+            name: "energy_active_delivered_cond"
+            description: "Conditional Active Energy Delivered (Into Load)"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3362
+            function_code: 3
+            name: "energy_active_received_cond"
+            description: "Conditional Active Energy Received (Out of Load)"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3370
+            function_code: 3
+            name: "energy_active_del_minus_rec_cond"
+            description: "Active Energy Delivered - Received, Conditional"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3374
+            function_code: 3
+            name: "energy_reactive_delivered_cond"
+            description: "Conditional Reactive Energy In (Delivered)"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3378
+            function_code: 3
+            name: "energy_reactive_received_cond"
+            description: "Conditional Reactive Energy Out (Received)"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3386
+            function_code: 3
+            name: "energy_reactive_del_minus_rec_cond"
+            description: "Reactive Energy Delivered - Received, Conditional"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3398
+            function_code: 3
+            name: "energy_apparent_del_plus_rec_cond"
+            description: "Apparent Energy Delivered + Received, Conditional"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3414
+            function_code: 3
+            name: "inc_active_delivered_last_complete"
+            description: "Active Energy Delivered, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3418
+            function_code: 3
+            name: "inc_active_received_last_complete"
+            description: "Active Energy Received, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3422
+            function_code: 3
+            name: "inc_active_del_minus_rec_last_complete"
+            description: "Active Energy Delivered - Received, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3426
+            function_code: 3
+            name: "inc_reactive_delivered_last_complete"
+            description: "Reactive Energy Delivered, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3430
+            function_code: 3
+            name: "inc_reactive_received_last_complete"
+            description: "Reactive Energy Received, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3434
+            function_code: 3
+            name: "inc_reactive_del_minus_rec_last_complete"
+            description: "Reactive Energy Delivered - Received, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3438
+            function_code: 3
+            name: "inc_apparent_del_plus_rec_last_complete"
+            description: "Apparent Energy Delivered + Received, Last Complete Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3442
+            function_code: 3
+            name: "inc_active_delivered_present"
+            description: "Active Energy Delivered, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3446
+            function_code: 3
+            name: "inc_active_received_present"
+            description: "Active Energy Received, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3450
+            function_code: 3
+            name: "inc_active_del_minus_rec_present"
+            description: "Active Energy Delivered - Received, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3454
+            function_code: 3
+            name: "inc_reactive_delivered_present"
+            description: "Reactive Energy Delivered, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3458
+            function_code: 3
+            name: "inc_reactive_received_present"
+            description: "Reactive Energy Received, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3462
+            function_code: 3
+            name: "inc_reactive_del_minus_rec_present"
+            description: "Reactive Energy Delivered - Received, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3466
+            function_code: 3
+            name: "inc_apparent_del_plus_rec_present"
+            description: "Apparent Energy Delivered + Received, Present Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3470
+            function_code: 3
+            name: "energy_active_delivered_interval"
+            description: "Active Energy Delivered Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3474
+            function_code: 3
+            name: "energy_active_received_interval"
+            description: "Active Energy Received Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "Wh"
+            gain: 1
+            flags:
+
+          - register: 3478
+            function_code: 3
+            name: "energy_reactive_delivered_interval"
+            description: "Reactive Energy Delivered Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3482
+            function_code: 3
+            name: "energy_reactive_received_interval"
+            description: "Reactive Energy Received Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VARh"
+            gain: 1
+            flags:
+
+          - register: 3486
+            function_code: 3
+            name: "energy_apparent_delivered_interval"
+            description: "Apparent Energy Delivered Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+          - register: 3490
+            function_code: 3
+            name: "energy_apparent_received_interval"
+            description: "Apparent Energy Received Interval"
+            words: 4
+            datatype: "S64BE"
+            unit: "VAh"
+            gain: 1
+            flags:
+
+storage:
+  local:
+    influxdb2:
+      bucket: "condor_pelvin"
+      measurement: "ion_7400"
+  remote:
+    influxdb2:
+      bucket: "andes_solar_condor_pelvin"
+      measurement: "ion_7400"
+

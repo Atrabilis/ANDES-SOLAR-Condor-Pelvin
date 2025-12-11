@@ -1,0 +1,27 @@
+services:
+  influxdb2:
+    image: influxdb:2
+    container_name: influxdb2
+    ports:
+      - "8086:8086"             
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: Psda2020
+      DOCKER_INFLUXDB_INIT_ORG: atamostec
+      DOCKER_INFLUXDB_INIT_BUCKET: condor_pelvin
+      # Opcional: DOCKER_INFLUXDB_INIT_RETENTION: 30d
+    volumes:
+      - influxdb2-data:/var/lib/influxdb2   # Datos (TSM/WAL, etc.)
+      - influxdb2-config:/etc/influxdb2     # Configuración del servidor
+    healthcheck:
+      test: ["CMD-SHELL", "curl -sf http://localhost:8086/health || exit 1"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 15s
+    restart: unless-stopped
+
+volumes:
+  influxdb2-data:
+  influxdb2-config:
