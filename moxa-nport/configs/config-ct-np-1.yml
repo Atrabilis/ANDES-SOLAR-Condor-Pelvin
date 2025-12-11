@@ -1,0 +1,187 @@
+mode: passive-listening
+sub_mode: store # test, store 
+test_duration_seconds: 60
+test_only_valid_crc: true
+
+nports:
+
+  - name: "Pyra"
+    host: 192.168.1.13
+    port: 4001
+    idle_gap_ms: 50
+    serial:
+      baud: 19200
+      data_bits: 8
+      parity: even
+      stop_bits: 1
+    dial_timeout_ms: 2000
+    reconnect_delay_ms: 1000
+    read_buffer_bytes: 1024
+    log_frame_hex: true
+    max_frame_bytes: 4096
+
+    detected_slaves:
+      - 1
+      - 2
+      - 3
+    slaves:
+
+      - name: "kipp_zonnen_1"
+        address: 1
+        registers:
+          - {register: 0, register_name: "value0",  register_type: "int16"}
+          - {register: 1, register_name: "value1",  register_type: "int16"}
+          - {register: 2, register_name: "value2",  register_type: "int16"}
+          - {register: 3, register_name: "value3",  register_type: "int16"}
+          - {register: 4, register_name: "value4",  register_type: "int16"}
+          - {register: 5, register_name: "value5",  register_type: "int16"}
+          - {register: 6, register_name: "value6",  register_type: "int16"}
+          - {register: 7, register_name: "value7",  register_type: "int16"}
+          - {register: 8, register_name: "value8",  register_type: "int16"}
+          - {register: 9, register_name: "value9",  register_type: "int16"}
+          - {register: 10, register_name: "value10", register_type: "int16"}
+          - {register: 11, register_name: "value11", register_type: "int16"}
+          - {register: 12, register_name: "value12", register_type: "int16"}
+          - {register: 13, register_name: "value13", register_type: "int16"}
+          - {register: 14, register_name: "value14", register_type: "int16"}
+          - {register: 15, register_name: "value15", register_type: "int16"}
+          - {register: 16, register_name: "value16", register_type: "int16"}
+          - {register: 17, register_name: "value17", register_type: "int16"}
+          - {register: 18, register_name: "value18", register_type: "int16"}
+          - {register: 19, register_name: "value19", register_type: "int16"}
+          - {register: 20, register_name: "value20", register_type: "int16"}
+          - {register: 21, register_name: "value21", register_type: "int16"}
+          - {register: 22, register_name: "value22", register_type: "int16"}
+          - {register: 23, register_name: "value23", register_type: "int16"}
+          - {register: 24, register_name: "value24", register_type: "int16"}
+          - {register: 25, register_name: "value25", register_type: "int16"}
+          - {register: 26, register_name: "value26", register_type: "int16"}
+          - {register: 27, register_name: "value27", register_type: "int16"}
+          - {register: 28, register_name: "value28", register_type: "int16"}
+          - {register: 29, register_name: "value29", register_type: "int16"}
+          - {register: 30, register_name: "value30", register_type: "int16"}
+          - {register: 31, register_name: "value31", register_type: "int16"}
+          - {register: 32, register_name: "value32", register_type: "int16"}
+          - {register: 33, register_name: "value33", register_type: "int16"}
+          - {register: 34, register_name: "value34", register_type: "int16"}
+          - {register: 35, register_name: "value35", register_type: "int16"}
+          - {register: 36, register_name: "value36", register_type: "int16"}
+          - {register: 37, register_name: "value37", register_type: "int16"}
+          - {register: 38, register_name: "value38", register_type: "int16"}
+          - {register: 39, register_name: "value39", register_type: "int16"}
+          - {register: 40, register_name: "value40", register_type: "int16"}
+          - {register: 41, register_name: "value41", register_type: "int16"}
+          - {register: 42, register_name: "value42", register_type: "int16"}
+
+      - name: "kipp_zonnen_2"
+        address: 2
+        registers:
+          - {register: 0, register_name: "value0",  register_type: "int16"}
+          - {register: 1, register_name: "value1",  register_type: "int16"}
+          - {register: 2, register_name: "value2",  register_type: "int16"}
+          - {register: 3, register_name: "value3",  register_type: "int16"}
+          - {register: 4, register_name: "value4",  register_type: "int16"}
+          - {register: 5, register_name: "value5",  register_type: "int16"}
+          - {register: 6, register_name: "value6",  register_type: "int16"}
+          - {register: 7, register_name: "value7",  register_type: "int16"}
+          - {register: 8, register_name: "value8",  register_type: "int16"}
+          - {register: 9, register_name: "value9",  register_type: "int16"}
+          - {register: 10, register_name: "value10", register_type: "int16"}
+          - {register: 11, register_name: "value11", register_type: "int16"}
+          - {register: 12, register_name: "value12", register_type: "int16"}
+          - {register: 13, register_name: "value13", register_type: "int16"}
+          - {register: 14, register_name: "value14", register_type: "int16"}
+          - {register: 15, register_name: "value15", register_type: "int16"}
+          - {register: 16, register_name: "value16", register_type: "int16"}
+          - {register: 17, register_name: "value17", register_type: "int16"}
+          - {register: 18, register_name: "value18", register_type: "int16"}
+          - {register: 19, register_name: "value19", register_type: "int16"}
+          - {register: 20, register_name: "value20", register_type: "int16"}
+          - {register: 21, register_name: "value21", register_type: "int16"}
+          - {register: 22, register_name: "value22", register_type: "int16"}
+          - {register: 23, register_name: "value23", register_type: "int16"}
+          - {register: 24, register_name: "value24", register_type: "int16"}
+          - {register: 25, register_name: "value25", register_type: "int16"}
+          - {register: 26, register_name: "value26", register_type: "int16"}
+          - {register: 27, register_name: "value27", register_type: "int16"}
+          - {register: 28, register_name: "value28", register_type: "int16"}
+          - {register: 29, register_name: "value29", register_type: "int16"}
+          - {register: 30, register_name: "value30", register_type: "int16"}
+          - {register: 31, register_name: "value31", register_type: "int16"}
+          - {register: 32, register_name: "value32", register_type: "int16"}
+          - {register: 33, register_name: "value33", register_type: "int16"}
+          - {register: 34, register_name: "value34", register_type: "int16"}
+          - {register: 35, register_name: "value35", register_type: "int16"}
+          - {register: 36, register_name: "value36", register_type: "int16"}
+          - {register: 37, register_name: "value37", register_type: "int16"}
+          - {register: 38, register_name: "value38", register_type: "int16"}
+          - {register: 39, register_name: "value39", register_type: "int16"}
+          - {register: 40, register_name: "value40", register_type: "int16"}
+          - {register: 41, register_name: "value41", register_type: "int16"}
+          - {register: 42, register_name: "value42", register_type: "int16"}
+
+      - name: "kipp_zonnen_3"
+        address: 3
+        registers:
+          - {register: 0, register_name: "value0",  register_type: "int16"}
+          - {register: 1, register_name: "value1",  register_type: "int16"}
+          - {register: 2, register_name: "value2",  register_type: "int16"}
+          - {register: 3, register_name: "value3",  register_type: "int16"}
+          - {register: 4, register_name: "value4",  register_type: "int16"}
+          - {register: 5, register_name: "value5",  register_type: "int16"}
+          - {register: 6, register_name: "value6",  register_type: "int16"}
+          - {register: 7, register_name: "value7",  register_type: "int16"}
+          - {register: 8, register_name: "value8",  register_type: "int16"}
+          - {register: 9, register_name: "value9",  register_type: "int16"}
+          - {register: 10, register_name: "value10", register_type: "int16"}
+          - {register: 11, register_name: "value11", register_type: "int16"}
+          - {register: 12, register_name: "value12", register_type: "int16"}
+          - {register: 13, register_name: "value13", register_type: "int16"}
+          - {register: 14, register_name: "value14", register_type: "int16"}
+          - {register: 15, register_name: "value15", register_type: "int16"}
+          - {register: 16, register_name: "value16", register_type: "int16"}
+          - {register: 17, register_name: "value17", register_type: "int16"}
+          - {register: 18, register_name: "value18", register_type: "int16"}
+          - {register: 19, register_name: "value19", register_type: "int16"}
+          - {register: 20, register_name: "value20", register_type: "int16"}
+          - {register: 21, register_name: "value21", register_type: "int16"}
+          - {register: 22, register_name: "value22", register_type: "int16"}
+          - {register: 23, register_name: "value23", register_type: "int16"}
+          - {register: 24, register_name: "value24", register_type: "int16"}
+          - {register: 25, register_name: "value25", register_type: "int16"}
+          - {register: 26, register_name: "value26", register_type: "int16"}
+          - {register: 27, register_name: "value27", register_type: "int16"}
+          - {register: 28, register_name: "value28", register_type: "int16"}
+          - {register: 29, register_name: "value29", register_type: "int16"}
+          - {register: 30, register_name: "value30", register_type: "int16"}
+          - {register: 31, register_name: "value31", register_type: "int16"}
+          - {register: 32, register_name: "value32", register_type: "int16"}
+          - {register: 33, register_name: "value33", register_type: "int16"}
+          - {register: 34, register_name: "value34", register_type: "int16"}
+          - {register: 35, register_name: "value35", register_type: "int16"}
+          - {register: 36, register_name: "value36", register_type: "int16"}
+          - {register: 37, register_name: "value37", register_type: "int16"}
+          - {register: 38, register_name: "value38", register_type: "int16"}
+          - {register: 39, register_name: "value39", register_type: "int16"}
+          - {register: 40, register_name: "value40", register_type: "int16"}
+          - {register: 41, register_name: "value41", register_type: "int16"}
+          - {register: 42, register_name: "value42", register_type: "int16"}
+storage:
+
+  local:
+    - name: "localhost-condor-pelvin"
+      db-type: influxdb2
+      db-url: http://localhost:8086
+      db-token: thZTiVeCpDVzLkmizOFiGGqgl2xKzpfHV2QH_vNFXINZZWBAGyZgMR4uNKJX2URWTy7uHqD_lLbtIb3Khqbq-Q==
+      db-org: atamostec
+      db-bucket: condor_pelvin
+      db-measurement: condor_pelvin-ct-np-1-test
+
+  remotes:
+    - name: "ua"
+      db-type: influxdb2
+      db-url: http://10.0.0.1:27017
+      db-token: piDbFR_bfRWO5Epu1IS96WbkNpSZZCYgwZZR29PcwUsxXwKdIyLMhVAhU4-5ohWeXIsX7Dp_X-WiPIDx0beafg==
+      db-org: atamostec
+      db-bucket: andes_solar_condor_pelvin
+      db-measurement: condor_pelvin-ct-np-1-test
