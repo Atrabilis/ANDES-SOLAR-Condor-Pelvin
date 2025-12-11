@@ -1,0 +1,46 @@
+mode: passive-listening
+sub_mode: test # test, store 
+test_duration_seconds: 300
+test_only_valid_crc: true
+
+nports:
+
+  - name: "dustiq"
+    host: 192.168.1.14
+    port: 4001
+    device_type: dustiq
+    idle_gap_ms: 50
+    serial:
+      baud: 19200
+      data_bits: 8
+      parity: even
+      stop_bits: 1
+    dial_timeout_ms: 2000
+    reconnect_delay_ms: 1000
+    read_buffer_bytes: 1024
+    log_frame_hex: true
+    max_frame_bytes: 4096
+
+    detected_slaves:
+      - 1
+
+
+storage:
+
+  local:
+    - name: "localhost-condor-pelvin"
+      db-type: influxdb2
+      db-url: http://localhost:8086
+      db-token: thZTiVeCpDVzLkmizOFiGGqgl2xKzpfHV2QH_vNFXINZZWBAGyZgMR4uNKJX2URWTy7uHqD_lLbtIb3Khqbq-Q==
+      db-org: atamostec
+      db-bucket: condor_pelvin
+      db-measurement: condor_pelvin-np5232i_9147-test
+
+  remotes:
+    - name: "ua"
+      db-type: influxdb2
+      db-url: http://10.0.0.1:27017
+      db-token: piDbFR_bfRWO5Epu1IS96WbkNpSZZCYgwZZR29PcwUsxXwKdIyLMhVAhU4-5ohWeXIsX7Dp_X-WiPIDx0beafg==
+      db-org: atamostec
+      db-bucket: andes_solar_condor_pelvin
+      db-measurement: condor_pelvin-np5232i_9147-test

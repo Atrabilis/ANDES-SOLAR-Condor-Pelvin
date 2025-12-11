@@ -1,0 +1,61 @@
+# Nmap 7.95 scan initiated Thu Dec 11 12:34:43 2025 as: nmap -sn -oN /home/admin/workspace/network_scan.txt 192.168.1.0/24
+Nmap scan report for 192.168.1.1
+Host is up (0.00033s latency).
+MAC Address: 00:04:2D:0F:07:7D (Sarian Systems)
+Nmap scan report for 192.168.1.2
+Host is up (0.00031s latency).
+MAC Address: 00:04:2D:0F:37:31 (Sarian Systems)
+Nmap scan report for 192.168.1.10
+Host is up (0.00025s latency).
+MAC Address: 00:90:E8:92:55:76 (Moxa Technologies)
+Nmap scan report for 192.168.1.11
+Host is up (0.016s latency).
+MAC Address: 00:90:E8:93:E2:28 (Moxa Technologies)
+Nmap scan report for 192.168.1.13
+Host is up (0.0019s latency).
+MAC Address: 00:90:E8:94:E2:E2 (Moxa Technologies)
+Nmap scan report for 192.168.1.14
+Host is up (0.0022s latency).
+MAC Address: 00:90:E8:94:E2:EE (Moxa Technologies)
+Nmap scan report for 192.168.1.21
+Host is up (0.0070s latency).
+MAC Address: 00:90:E8:93:E2:22 (Moxa Technologies)
+Nmap scan report for 192.168.1.22
+Host is up (0.0045s latency).
+MAC Address: 00:90:E8:95:14:46 (Moxa Technologies)
+Nmap scan report for 192.168.1.23
+Host is up (0.0025s latency).
+MAC Address: 00:90:E8:93:A7:14 (Moxa Technologies)
+Nmap scan report for 192.168.1.24
+Host is up (0.0025s latency).
+MAC Address: 00:90:E8:94:E2:F3 (Moxa Technologies)
+Nmap scan report for 192.168.1.31
+Host is up (0.0038s latency).
+MAC Address: 00:90:E8:92:BC:BE (Moxa Technologies)
+Nmap scan report for 192.168.1.32
+Host is up (0.0029s latency).
+MAC Address: 00:90:E8:91:38:A9 (Moxa Technologies)
+Nmap scan report for 192.168.1.65
+Host is up (0.0040s latency).
+MAC Address: 00:60:78:0E:28:DC (Power Measurement)
+Nmap scan report for 192.168.1.90
+Host is up (0.00020s latency).
+MAC Address: 34:14:B5:88:AF:A8 (Texas Instruments)
+Nmap scan report for 192.168.1.91
+Host is up (0.00040s latency).
+MAC Address: 70:B3:D5:3C:68:A3 (ACD Elekronik GmbH)
+Nmap scan report for 192.168.1.92
+Host is up (0.00059s latency).
+MAC Address: 00:40:9D:CF:36:E4 (DigiBoard)
+Nmap scan report for 192.168.1.93
+Host is up (0.00068s latency).
+MAC Address: 00:40:9D:CF:36:F0 (DigiBoard)
+Nmap scan report for 192.168.1.102
+Host is up (0.00048s latency).
+MAC Address: C4:00:AD:4D:9B:BF (Advantech Technology (China))
+Nmap scan report for 192.168.1.230
+Host is up (0.0024s latency).
+MAC Address: E0:A1:98:17:9E:79 (Noja Power Switchgear)
+Nmap scan report for 192.168.1.101
+Host is up.
+# Nmap done at Thu Dec 11 12:34:45 2025 -- 256 IP addresses (20 hosts up) scanned in 2.01 seconds
