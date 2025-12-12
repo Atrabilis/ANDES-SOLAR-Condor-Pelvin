@@ -1,0 +1,5379 @@
+devices:
+- device:
+    name: trackers
+    ip: 192.168.1.91
+    port: 502
+    flags: null
+    slaves:
+    - name: ion_7400
+      slave_id: 1
+      offset: 0
+      modbus_registers:
+        - register: 30046
+          function_code: 3
+          name: "rsu1_wind_speed"
+          description: "RSU1 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30048
+          function_code: 3
+          name: "rsu2_wind_speed"
+          description: "RSU2 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30050
+          function_code: 3
+          name: "rsu3_wind_speed"
+          description: "RSU3 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30052
+          function_code: 3
+          name: "rsu4_wind_speed"
+          description: "RSU4 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30054
+          function_code: 3
+          name: "rsu5_wind_speed"
+          description: "RSU5 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30056
+          function_code: 3
+          name: "rsu6_wind_speed"
+          description: "RSU6 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30058
+          function_code: 3
+          name: "rsu7_wind_speed"
+          description: "RSU7 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30060
+          function_code: 3
+          name: "rsu8_wind_speed"
+          description: "RSU8 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30062
+          function_code: 3
+          name: "rsu9_wind_speed"
+          description: "RSU9 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30064
+          function_code: 3
+          name: "rsu10_wind_speed"
+          description: "RSU10 Wind Speed"
+          words: 2
+          datatype: "F32BE"
+          unit: "m/s"
+          gain: 1
+          flags:
+
+        - register: 30086
+          function_code: 3
+          name: "rsu1_irradiance"
+          description: "RSU1 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30088
+          function_code: 3
+          name: "rsu2_irradiance"
+          description: "RSU2 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30090
+          function_code: 3
+          name: "rsu3_irradiance"
+          description: "RSU3 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30092
+          function_code: 3
+          name: "rsu4_irradiance"
+          description: "RSU4 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30094
+          function_code: 3
+          name: "rsu5_irradiance"
+          description: "RSU5 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30096
+          function_code: 3
+          name: "rsu6_irradiance"
+          description: "RSU6 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30098
+          function_code: 3
+          name: "rsu7_irradiance"
+          description: "RSU7 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30100
+          function_code: 3
+          name: "rsu8_irradiance"
+          description: "RSU8 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30102
+          function_code: 3
+          name: "rsu9_irradiance"
+          description: "RSU9 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30104
+          function_code: 3
+          name: "rsu10_irradiance"
+          description: "RSU10 Irradiance"
+          words: 2
+          datatype: "F32BE"
+          unit: "W/m²"
+          gain: 1
+          flags:
+
+        - register: 30106
+          function_code: 3
+          name: "rsu1_wind_direction"
+          description: "RSU1 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30108
+          function_code: 3
+          name: "rsu2_wind_direction"
+          description: "RSU2 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30110
+          function_code: 3
+          name: "rsu3_wind_direction"
+          description: "RSU3 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30112
+          function_code: 3
+          name: "rsu4_wind_direction"
+          description: "RSU4 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30114
+          function_code: 3
+          name: "rsu5_wind_direction"
+          description: "RSU5 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30116
+          function_code: 3
+          name: "rsu6_wind_direction"
+          description: "RSU6 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30118
+          function_code: 3
+          name: "rsu7_wind_direction"
+          description: "RSU7 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30120
+          function_code: 3
+          name: "rsu8_wind_direction"
+          description: "RSU8 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30122
+          function_code: 3
+          name: "rsu9_wind_direction"
+          description: "RSU9 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30124
+          function_code: 3
+          name: "rsu10_wind_direction"
+          description: "RSU10 Wind Direction"
+          words: 2
+          datatype: "F32BE"
+          unit: "°"
+          gain: 1
+          flags:
+
+        - register: 30152
+          function_code: 3
+          name: "position_a1_rad_s1"
+          description: "Position A1 Rad S1"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30174
+          function_code: 3
+          name: "position_a1_rad_s2"
+          description: "Position A1 Rad S2"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30196
+          function_code: 3
+          name: "position_a1_rad_s3"
+          description: "Position A1 Rad S3"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30218
+          function_code: 3
+          name: "position_a1_rad_s4"
+          description: "Position A1 Rad S4"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30240
+          function_code: 3
+          name: "position_a1_rad_s5"
+          description: "Position A1 Rad S5"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30262
+          function_code: 3
+          name: "position_a1_rad_s6"
+          description: "Position A1 Rad S6"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30284
+          function_code: 3
+          name: "position_a1_rad_s7"
+          description: "Position A1 Rad S7"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30306
+          function_code: 3
+          name: "position_a1_rad_s8"
+          description: "Position A1 Rad S8"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30328
+          function_code: 3
+          name: "position_a1_rad_s9"
+          description: "Position A1 Rad S9"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30350
+          function_code: 3
+          name: "position_a1_rad_s10"
+          description: "Position A1 Rad S10"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30460
+          function_code: 3
+          name: "position_a1_rad_s15"
+          description: "Position A1 Rad S15"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30482
+          function_code: 3
+          name: "position_a1_rad_s16"
+          description: "Position A1 Rad S16"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30504
+          function_code: 3
+          name: "position_a1_rad_s17"
+          description: "Position A1 Rad S17"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30526
+          function_code: 3
+          name: "position_a1_rad_s18"
+          description: "Position A1 Rad S18"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30548
+          function_code: 3
+          name: "position_a1_rad_s19"
+          description: "Position A1 Rad S19"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30570
+          function_code: 3
+          name: "position_a1_rad_s20"
+          description: "Position A1 Rad S20"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30592
+          function_code: 3
+          name: "position_a1_rad_s21"
+          description: "Position A1 Rad S21"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30614
+          function_code: 3
+          name: "position_a1_rad_s22"
+          description: "Position A1 Rad S22"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30636
+          function_code: 3
+          name: "position_a1_rad_s23"
+          description: "Position A1 Rad S23"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30658
+          function_code: 3
+          name: "position_a1_rad_s24"
+          description: "Position A1 Rad S24"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30680
+          function_code: 3
+          name: "position_a1_rad_s25"
+          description: "Position A1 Rad S25"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30702
+          function_code: 3
+          name: "position_a1_rad_s26"
+          description: "Position A1 Rad S26"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30724
+          function_code: 3
+          name: "position_a1_rad_s27"
+          description: "Position A1 Rad S27"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30746
+          function_code: 3
+          name: "position_a1_rad_s28"
+          description: "Position A1 Rad S28"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30768
+          function_code: 3
+          name: "position_a1_rad_s29"
+          description: "Position A1 Rad S29"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30790
+          function_code: 3
+          name: "position_a1_rad_s30"
+          description: "Position A1 Rad S30"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30812
+          function_code: 3
+          name: "position_a1_rad_s31"
+          description: "Position A1 Rad S31"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30834
+          function_code: 3
+          name: "position_a1_rad_s32"
+          description: "Position A1 Rad S32"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30856
+          function_code: 3
+          name: "position_a1_rad_s33"
+          description: "Position A1 Rad S33"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30878
+          function_code: 3
+          name: "position_a1_rad_s34"
+          description: "Position A1 Rad S34"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30900
+          function_code: 3
+          name: "position_a1_rad_s35"
+          description: "Position A1 Rad S35"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30922
+          function_code: 3
+          name: "position_a1_rad_s36"
+          description: "Position A1 Rad S36"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30944
+          function_code: 3
+          name: "position_a1_rad_s37"
+          description: "Position A1 Rad S37"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30966
+          function_code: 3
+          name: "position_a1_rad_s38"
+          description: "Position A1 Rad S38"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30988
+          function_code: 3
+          name: "position_a1_rad_s39"
+          description: "Position A1 Rad S39"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31010
+          function_code: 3
+          name: "position_a1_rad_s40"
+          description: "Position A1 Rad S40"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31032
+          function_code: 3
+          name: "position_a1_rad_s41"
+          description: "Position A1 Rad S41"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31054
+          function_code: 3
+          name: "position_a1_rad_s42"
+          description: "Position A1 Rad S42"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31076
+          function_code: 3
+          name: "position_a1_rad_s43"
+          description: "Position A1 Rad S43"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31098
+          function_code: 3
+          name: "position_a1_rad_s44"
+          description: "Position A1 Rad S44"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31120
+          function_code: 3
+          name: "position_a1_rad_s45"
+          description: "Position A1 Rad S45"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31142
+          function_code: 3
+          name: "position_a1_rad_s46"
+          description: "Position A1 Rad S46"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31164
+          function_code: 3
+          name: "position_a1_rad_s47"
+          description: "Position A1 Rad S47"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31186
+          function_code: 3
+          name: "position_a1_rad_s48"
+          description: "Position A1 Rad S48"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31208
+          function_code: 3
+          name: "position_a1_rad_s49"
+          description: "Position A1 Rad S49"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31230
+          function_code: 3
+          name: "position_a1_rad_s50"
+          description: "Position A1 Rad S50"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31252
+          function_code: 3
+          name: "position_a1_rad_s51"
+          description: "Position A1 Rad S51"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31274
+          function_code: 3
+          name: "position_a1_rad_s52"
+          description: "Position A1 Rad S52"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31296
+          function_code: 3
+          name: "position_a1_rad_s53"
+          description: "Position A1 Rad S53"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31318
+          function_code: 3
+          name: "position_a1_rad_s54"
+          description: "Position A1 Rad S54"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31340
+          function_code: 3
+          name: "position_a1_rad_s55"
+          description: "Position A1 Rad S55"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31362
+          function_code: 3
+          name: "position_a1_rad_s56"
+          description: "Position A1 Rad S56"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31384
+          function_code: 3
+          name: "position_a1_rad_s57"
+          description: "Position A1 Rad S57"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31406
+          function_code: 3
+          name: "position_a1_rad_s58"
+          description: "Position A1 Rad S58"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31428
+          function_code: 3
+          name: "position_a1_rad_s59"
+          description: "Position A1 Rad S59"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31450
+          function_code: 3
+          name: "position_a1_rad_s60"
+          description: "Position A1 Rad S60"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31472
+          function_code: 3
+          name: "position_a1_rad_s61"
+          description: "Position A1 Rad S61"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31494
+          function_code: 3
+          name: "position_a1_rad_s62"
+          description: "Position A1 Rad S62"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31516
+          function_code: 3
+          name: "position_a1_rad_s63"
+          description: "Position A1 Rad S63"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31538
+          function_code: 3
+          name: "position_a1_rad_s64"
+          description: "Position A1 Rad S64"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31560
+          function_code: 3
+          name: "position_a1_rad_s65"
+          description: "Position A1 Rad S65"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31582
+          function_code: 3
+          name: "position_a1_rad_s66"
+          description: "Position A1 Rad S66"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31604
+          function_code: 3
+          name: "position_a1_rad_s67"
+          description: "Position A1 Rad S67"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31626
+          function_code: 3
+          name: "position_a1_rad_s68"
+          description: "Position A1 Rad S68"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31648
+          function_code: 3
+          name: "position_a1_rad_s69"
+          description: "Position A1 Rad S69"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31670
+          function_code: 3
+          name: "position_a1_rad_s70"
+          description: "Position A1 Rad S70"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31692
+          function_code: 3
+          name: "position_a1_rad_s71"
+          description: "Position A1 Rad S71"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31714
+          function_code: 3
+          name: "position_a1_rad_s72"
+          description: "Position A1 Rad S72"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31736
+          function_code: 3
+          name: "position_a1_rad_s73"
+          description: "Position A1 Rad S73"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31758
+          function_code: 3
+          name: "position_a1_rad_s74"
+          description: "Position A1 Rad S74"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31780
+          function_code: 3
+          name: "position_a1_rad_s75"
+          description: "Position A1 Rad S75"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31802
+          function_code: 3
+          name: "position_a1_rad_s76"
+          description: "Position A1 Rad S76"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31824
+          function_code: 3
+          name: "position_a1_rad_s77"
+          description: "Position A1 Rad S77"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31846
+          function_code: 3
+          name: "position_a1_rad_s78"
+          description: "Position A1 Rad S78"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31868
+          function_code: 3
+          name: "position_a1_rad_s79"
+          description: "Position A1 Rad S79"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31890
+          function_code: 3
+          name: "position_a1_rad_s80"
+          description: "Position A1 Rad S80"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31912
+          function_code: 3
+          name: "position_a1_rad_s81"
+          description: "Position A1 Rad S81"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31934
+          function_code: 3
+          name: "position_a1_rad_s82"
+          description: "Position A1 Rad S82"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31956
+          function_code: 3
+          name: "position_a1_rad_s83"
+          description: "Position A1 Rad S83"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31978
+          function_code: 3
+          name: "position_a1_rad_s84"
+          description: "Position A1 Rad S84"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32000
+          function_code: 3
+          name: "position_a1_rad_s85"
+          description: "Position A1 Rad S85"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32022
+          function_code: 3
+          name: "position_a1_rad_s86"
+          description: "Position A1 Rad S86"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32044
+          function_code: 3
+          name: "position_a1_rad_s87"
+          description: "Position A1 Rad S87"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32066
+          function_code: 3
+          name: "position_a1_rad_s88"
+          description: "Position A1 Rad S88"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32088
+          function_code: 3
+          name: "position_a1_rad_s89"
+          description: "Position A1 Rad S89"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32110
+          function_code: 3
+          name: "position_a1_rad_s90"
+          description: "Position A1 Rad S90"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32132
+          function_code: 3
+          name: "position_a1_rad_s91"
+          description: "Position A1 Rad S91"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32154
+          function_code: 3
+          name: "position_a1_rad_s92"
+          description: "Position A1 Rad S92"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32176
+          function_code: 3
+          name: "position_a1_rad_s93"
+          description: "Position A1 Rad S93"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32198
+          function_code: 3
+          name: "position_a1_rad_s94"
+          description: "Position A1 Rad S94"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32220
+          function_code: 3
+          name: "position_a1_rad_s95"
+          description: "Position A1 Rad S95"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32242
+          function_code: 3
+          name: "position_a1_rad_s96"
+          description: "Position A1 Rad S96"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32264
+          function_code: 3
+          name: "position_a1_rad_s97"
+          description: "Position A1 Rad S97"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32286
+          function_code: 3
+          name: "position_a1_rad_s98"
+          description: "Position A1 Rad S98"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32308
+          function_code: 3
+          name: "position_a1_rad_s99"
+          description: "Position A1 Rad S99"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32330
+          function_code: 3
+          name: "position_a1_rad_s100"
+          description: "Position A1 Rad S100"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32352
+          function_code: 3
+          name: "position_a1_rad_s101"
+          description: "Position A1 Rad S101"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32374
+          function_code: 3
+          name: "position_a1_rad_s102"
+          description: "Position A1 Rad S102"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30159
+          function_code: 3
+          name: "state_of_charge_s1"
+          description: "State Of Charge S1"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30181
+          function_code: 3
+          name: "state_of_charge_s2"
+          description: "State Of Charge S2"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30203
+          function_code: 3
+          name: "state_of_charge_s3"
+          description: "State Of Charge S3"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30225
+          function_code: 3
+          name: "state_of_charge_s4"
+          description: "State Of Charge S4"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30247
+          function_code: 3
+          name: "state_of_charge_s5"
+          description: "State Of Charge S5"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30269
+          function_code: 3
+          name: "state_of_charge_s6"
+          description: "State Of Charge S6"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30291
+          function_code: 3
+          name: "state_of_charge_s7"
+          description: "State Of Charge S7"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30313
+          function_code: 3
+          name: "state_of_charge_s8"
+          description: "State Of Charge S8"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30335
+          function_code: 3
+          name: "state_of_charge_s9"
+          description: "State Of Charge S9"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30357
+          function_code: 3
+          name: "state_of_charge_s10"
+          description: "State Of Charge S10"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30379
+          function_code: 3
+          name: "state_of_charge_s11"
+          description: "State Of Charge S11"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30401
+          function_code: 3
+          name: "state_of_charge_s12"
+          description: "State Of Charge S12"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30423
+          function_code: 3
+          name: "state_of_charge_s13"
+          description: "State Of Charge S13"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30445
+          function_code: 3
+          name: "state_of_charge_s14"
+          description: "State Of Charge S14"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30467
+          function_code: 3
+          name: "state_of_charge_s15"
+          description: "State Of Charge S15"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30489
+          function_code: 3
+          name: "state_of_charge_s16"
+          description: "State Of Charge S16"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30511
+          function_code: 3
+          name: "state_of_charge_s17"
+          description: "State Of Charge S17"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30533
+          function_code: 3
+          name: "state_of_charge_s18"
+          description: "State Of Charge S18"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30555
+          function_code: 3
+          name: "state_of_charge_s19"
+          description: "State Of Charge S19"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30577
+          function_code: 3
+          name: "state_of_charge_s20"
+          description: "State Of Charge S20"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30599
+          function_code: 3
+          name: "state_of_charge_s21"
+          description: "State Of Charge S21"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30621
+          function_code: 3
+          name: "state_of_charge_s22"
+          description: "State Of Charge S22"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30643
+          function_code: 3
+          name: "state_of_charge_s23"
+          description: "State Of Charge S23"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30665
+          function_code: 3
+          name: "state_of_charge_s24"
+          description: "State Of Charge S24"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30687
+          function_code: 3
+          name: "state_of_charge_s25"
+          description: "State Of Charge S25"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30709
+          function_code: 3
+          name: "state_of_charge_s26"
+          description: "State Of Charge S26"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30731
+          function_code: 3
+          name: "state_of_charge_s27"
+          description: "State Of Charge S27"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30753
+          function_code: 3
+          name: "state_of_charge_s28"
+          description: "State Of Charge S28"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30775
+          function_code: 3
+          name: "state_of_charge_s29"
+          description: "State Of Charge S29"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30797
+          function_code: 3
+          name: "state_of_charge_s30"
+          description: "State Of Charge S30"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30819
+          function_code: 3
+          name: "state_of_charge_s31"
+          description: "State Of Charge S31"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30841
+          function_code: 3
+          name: "state_of_charge_s32"
+          description: "State Of Charge S32"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30863
+          function_code: 3
+          name: "state_of_charge_s33"
+          description: "State Of Charge S33"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30885
+          function_code: 3
+          name: "state_of_charge_s34"
+          description: "State Of Charge S34"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30907
+          function_code: 3
+          name: "state_of_charge_s35"
+          description: "State Of Charge S35"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30929
+          function_code: 3
+          name: "state_of_charge_s36"
+          description: "State Of Charge S36"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30951
+          function_code: 3
+          name: "state_of_charge_s37"
+          description: "State Of Charge S37"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30973
+          function_code: 3
+          name: "state_of_charge_s38"
+          description: "State Of Charge S38"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30995
+          function_code: 3
+          name: "state_of_charge_s39"
+          description: "State Of Charge S39"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31017
+          function_code: 3
+          name: "state_of_charge_s40"
+          description: "State Of Charge S40"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31039
+          function_code: 3
+          name: "state_of_charge_s41"
+          description: "State Of Charge S41"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31061
+          function_code: 3
+          name: "state_of_charge_s42"
+          description: "State Of Charge S42"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31083
+          function_code: 3
+          name: "state_of_charge_s43"
+          description: "State Of Charge S43"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31105
+          function_code: 3
+          name: "state_of_charge_s44"
+          description: "State Of Charge S44"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31127
+          function_code: 3
+          name: "state_of_charge_s45"
+          description: "State Of Charge S45"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31149
+          function_code: 3
+          name: "state_of_charge_s46"
+          description: "State Of Charge S46"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31171
+          function_code: 3
+          name: "state_of_charge_s47"
+          description: "State Of Charge S47"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31193
+          function_code: 3
+          name: "state_of_charge_s48"
+          description: "State Of Charge S48"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31215
+          function_code: 3
+          name: "state_of_charge_s49"
+          description: "State Of Charge S49"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31237
+          function_code: 3
+          name: "state_of_charge_s50"
+          description: "State Of Charge S50"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31259
+          function_code: 3
+          name: "state_of_charge_s51"
+          description: "State Of Charge S51"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31281
+          function_code: 3
+          name: "state_of_charge_s52"
+          description: "State Of Charge S52"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31303
+          function_code: 3
+          name: "state_of_charge_s53"
+          description: "State Of Charge S53"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31325
+          function_code: 3
+          name: "state_of_charge_s54"
+          description: "State Of Charge S54"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31347
+          function_code: 3
+          name: "state_of_charge_s55"
+          description: "State Of Charge S55"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31369
+          function_code: 3
+          name: "state_of_charge_s56"
+          description: "State Of Charge S56"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31391
+          function_code: 3
+          name: "state_of_charge_s57"
+          description: "State Of Charge S57"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31413
+          function_code: 3
+          name: "state_of_charge_s58"
+          description: "State Of Charge S58"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31435
+          function_code: 3
+          name: "state_of_charge_s59"
+          description: "State Of Charge S59"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31457
+          function_code: 3
+          name: "state_of_charge_s60"
+          description: "State Of Charge S60"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31479
+          function_code: 3
+          name: "state_of_charge_s61"
+          description: "State Of Charge S61"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31501
+          function_code: 3
+          name: "state_of_charge_s62"
+          description: "State Of Charge S62"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31523
+          function_code: 3
+          name: "state_of_charge_s63"
+          description: "State Of Charge S63"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31545
+          function_code: 3
+          name: "state_of_charge_s64"
+          description: "State Of Charge S64"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31567
+          function_code: 3
+          name: "state_of_charge_s65"
+          description: "State Of Charge S65"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31589
+          function_code: 3
+          name: "state_of_charge_s66"
+          description: "State Of Charge S66"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31611
+          function_code: 3
+          name: "state_of_charge_s67"
+          description: "State Of Charge S67"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31633
+          function_code: 3
+          name: "state_of_charge_s68"
+          description: "State Of Charge S68"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31655
+          function_code: 3
+          name: "state_of_charge_s69"
+          description: "State Of Charge S69"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31677
+          function_code: 3
+          name: "state_of_charge_s70"
+          description: "State Of Charge S70"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31699
+          function_code: 3
+          name: "state_of_charge_s71"
+          description: "State Of Charge S71"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31721
+          function_code: 3
+          name: "state_of_charge_s72"
+          description: "State Of Charge S72"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31743
+          function_code: 3
+          name: "state_of_charge_s73"
+          description: "State Of Charge S73"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31765
+          function_code: 3
+          name: "state_of_charge_s74"
+          description: "State Of Charge S74"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31787
+          function_code: 3
+          name: "state_of_charge_s75"
+          description: "State Of Charge S75"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31809
+          function_code: 3
+          name: "state_of_charge_s76"
+          description: "State Of Charge S76"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31831
+          function_code: 3
+          name: "state_of_charge_s77"
+          description: "State Of Charge S77"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31853
+          function_code: 3
+          name: "state_of_charge_s78"
+          description: "State Of Charge S78"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31875
+          function_code: 3
+          name: "state_of_charge_s79"
+          description: "State Of Charge S79"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31897
+          function_code: 3
+          name: "state_of_charge_s80"
+          description: "State Of Charge S80"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31919
+          function_code: 3
+          name: "state_of_charge_s81"
+          description: "State Of Charge S81"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31941
+          function_code: 3
+          name: "state_of_charge_s82"
+          description: "State Of Charge S82"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31963
+          function_code: 3
+          name: "state_of_charge_s83"
+          description: "State Of Charge S83"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31985
+          function_code: 3
+          name: "state_of_charge_s84"
+          description: "State Of Charge S84"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32007
+          function_code: 3
+          name: "state_of_charge_s85"
+          description: "State Of Charge S85"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32029
+          function_code: 3
+          name: "state_of_charge_s86"
+          description: "State Of Charge S86"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32051
+          function_code: 3
+          name: "state_of_charge_s87"
+          description: "State Of Charge S87"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32073
+          function_code: 3
+          name: "state_of_charge_s88"
+          description: "State Of Charge S88"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32095
+          function_code: 3
+          name: "state_of_charge_s89"
+          description: "State Of Charge S89"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32117
+          function_code: 3
+          name: "state_of_charge_s90"
+          description: "State Of Charge S90"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32139
+          function_code: 3
+          name: "state_of_charge_s91"
+          description: "State Of Charge S91"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32161
+          function_code: 3
+          name: "state_of_charge_s92"
+          description: "State Of Charge S92"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32183
+          function_code: 3
+          name: "state_of_charge_s93"
+          description: "State Of Charge S93"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32205
+          function_code: 3
+          name: "state_of_charge_s94"
+          description: "State Of Charge S94"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32227
+          function_code: 3
+          name: "state_of_charge_s95"
+          description: "State Of Charge S95"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32249
+          function_code: 3
+          name: "state_of_charge_s96"
+          description: "State Of Charge S96"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32271
+          function_code: 3
+          name: "state_of_charge_s97"
+          description: "State Of Charge S97"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32293
+          function_code: 3
+          name: "state_of_charge_s98"
+          description: "State Of Charge S98"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32315
+          function_code: 3
+          name: "state_of_charge_s99"
+          description: "State Of Charge S99"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32337
+          function_code: 3
+          name: "state_of_charge_s100"
+          description: "State Of Charge S100"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32359
+          function_code: 3
+          name: "state_of_charge_s101"
+          description: "State Of Charge S101"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32381
+          function_code: 3
+          name: "state_of_charge_s102"
+          description: "State Of Charge S102"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+
+        - register: 30166
+          function_code: 3
+          name: "temp_bat_kx10_s1"
+          description: "Temp Bat Kx10 S1"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30188
+          function_code: 3
+          name: "temp_bat_kx10_s2"
+          description: "Temp Bat Kx10 S2"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30210
+          function_code: 3
+          name: "temp_bat_kx10_s3"
+          description: "Temp Bat Kx10 S3"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30232
+          function_code: 3
+          name: "temp_bat_kx10_s4"
+          description: "Temp Bat Kx10 S4"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30254
+          function_code: 3
+          name: "temp_bat_kx10_s5"
+          description: "Temp Bat Kx10 S5"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30276
+          function_code: 3
+          name: "temp_bat_kx10_s6"
+          description: "Temp Bat Kx10 S6"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30298
+          function_code: 3
+          name: "temp_bat_kx10_s7"
+          description: "Temp Bat Kx10 S7"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30320
+          function_code: 3
+          name: "temp_bat_kx10_s8"
+          description: "Temp Bat Kx10 S8"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30342
+          function_code: 3
+          name: "temp_bat_kx10_s9"
+          description: "Temp Bat Kx10 S9"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30364
+          function_code: 3
+          name: "temp_bat_kx10_s10"
+          description: "Temp Bat Kx10 S10"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30386
+          function_code: 3
+          name: "temp_bat_kx10_s11"
+          description: "Temp Bat Kx10 S11"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30408
+          function_code: 3
+          name: "temp_bat_kx10_s12"
+          description: "Temp Bat Kx10 S12"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30430
+          function_code: 3
+          name: "temp_bat_kx10_s13"
+          description: "Temp Bat Kx10 S13"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30452
+          function_code: 3
+          name: "temp_bat_kx10_s14"
+          description: "Temp Bat Kx10 S14"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30474
+          function_code: 3
+          name: "temp_bat_kx10_s15"
+          description: "Temp Bat Kx10 S15"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30496
+          function_code: 3
+          name: "temp_bat_kx10_s16"
+          description: "Temp Bat Kx10 S16"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30518
+          function_code: 3
+          name: "temp_bat_kx10_s17"
+          description: "Temp Bat Kx10 S17"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30540
+          function_code: 3
+          name: "temp_bat_kx10_s18"
+          description: "Temp Bat Kx10 S18"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30562
+          function_code: 3
+          name: "temp_bat_kx10_s19"
+          description: "Temp Bat Kx10 S19"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30584
+          function_code: 3
+          name: "temp_bat_kx10_s20"
+          description: "Temp Bat Kx10 S20"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30606
+          function_code: 3
+          name: "temp_bat_kx10_s21"
+          description: "Temp Bat Kx10 S21"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30628
+          function_code: 3
+          name: "temp_bat_kx10_s22"
+          description: "Temp Bat Kx10 S22"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30650
+          function_code: 3
+          name: "temp_bat_kx10_s23"
+          description: "Temp Bat Kx10 S23"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30672
+          function_code: 3
+          name: "temp_bat_kx10_s24"
+          description: "Temp Bat Kx10 S24"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30694
+          function_code: 3
+          name: "temp_bat_kx10_s25"
+          description: "Temp Bat Kx10 S25"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30716
+          function_code: 3
+          name: "temp_bat_kx10_s26"
+          description: "Temp Bat Kx10 S26"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30738
+          function_code: 3
+          name: "temp_bat_kx10_s27"
+          description: "Temp Bat Kx10 S27"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30760
+          function_code: 3
+          name: "temp_bat_kx10_s28"
+          description: "Temp Bat Kx10 S28"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30782
+          function_code: 3
+          name: "temp_bat_kx10_s29"
+          description: "Temp Bat Kx10 S29"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30804
+          function_code: 3
+          name: "temp_bat_kx10_s30"
+          description: "Temp Bat Kx10 S30"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30826
+          function_code: 3
+          name: "temp_bat_kx10_s31"
+          description: "Temp Bat Kx10 S31"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30848
+          function_code: 3
+          name: "temp_bat_kx10_s32"
+          description: "Temp Bat Kx10 S32"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30870
+          function_code: 3
+          name: "temp_bat_kx10_s33"
+          description: "Temp Bat Kx10 S33"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30892
+          function_code: 3
+          name: "temp_bat_kx10_s34"
+          description: "Temp Bat Kx10 S34"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30914
+          function_code: 3
+          name: "temp_bat_kx10_s35"
+          description: "Temp Bat Kx10 S35"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30936
+          function_code: 3
+          name: "temp_bat_kx10_s36"
+          description: "Temp Bat Kx10 S36"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30958
+          function_code: 3
+          name: "temp_bat_kx10_s37"
+          description: "Temp Bat Kx10 S37"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 30980
+          function_code: 3
+          name: "temp_bat_kx10_s38"
+          description: "Temp Bat Kx10 S38"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31002
+          function_code: 3
+          name: "temp_bat_kx10_s39"
+          description: "Temp Bat Kx10 S39"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31024
+          function_code: 3
+          name: "temp_bat_kx10_s40"
+          description: "Temp Bat Kx10 S40"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31046
+          function_code: 3
+          name: "temp_bat_kx10_s41"
+          description: "Temp Bat Kx10 S41"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31068
+          function_code: 3
+          name: "temp_bat_kx10_s42"
+          description: "Temp Bat Kx10 S42"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31090
+          function_code: 3
+          name: "temp_bat_kx10_s43"
+          description: "Temp Bat Kx10 S43"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31112
+          function_code: 3
+          name: "temp_bat_kx10_s44"
+          description: "Temp Bat Kx10 S44"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31134
+          function_code: 3
+          name: "temp_bat_kx10_s45"
+          description: "Temp Bat Kx10 S45"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31156
+          function_code: 3
+          name: "temp_bat_kx10_s46"
+          description: "Temp Bat Kx10 S46"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31178
+          function_code: 3
+          name: "temp_bat_kx10_s47"
+          description: "Temp Bat Kx10 S47"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31200
+          function_code: 3
+          name: "temp_bat_kx10_s48"
+          description: "Temp Bat Kx10 S48"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31222
+          function_code: 3
+          name: "temp_bat_kx10_s49"
+          description: "Temp Bat Kx10 S49"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31244
+          function_code: 3
+          name: "temp_bat_kx10_s50"
+          description: "Temp Bat Kx10 S50"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31266
+          function_code: 3
+          name: "temp_bat_kx10_s51"
+          description: "Temp Bat Kx10 S51"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31288
+          function_code: 3
+          name: "temp_bat_kx10_s52"
+          description: "Temp Bat Kx10 S52"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31310
+          function_code: 3
+          name: "temp_bat_kx10_s53"
+          description: "Temp Bat Kx10 S53"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31332
+          function_code: 3
+          name: "temp_bat_kx10_s54"
+          description: "Temp Bat Kx10 S54"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31354
+          function_code: 3
+          name: "temp_bat_kx10_s55"
+          description: "Temp Bat Kx10 S55"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31376
+          function_code: 3
+          name: "temp_bat_kx10_s56"
+          description: "Temp Bat Kx10 S56"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31398
+          function_code: 3
+          name: "temp_bat_kx10_s57"
+          description: "Temp Bat Kx10 S57"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31420
+          function_code: 3
+          name: "temp_bat_kx10_s58"
+          description: "Temp Bat Kx10 S58"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31442
+          function_code: 3
+          name: "temp_bat_kx10_s59"
+          description: "Temp Bat Kx10 S59"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31464
+          function_code: 3
+          name: "temp_bat_kx10_s60"
+          description: "Temp Bat Kx10 S60"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31486
+          function_code: 3
+          name: "temp_bat_kx10_s61"
+          description: "Temp Bat Kx10 S61"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31508
+          function_code: 3
+          name: "temp_bat_kx10_s62"
+          description: "Temp Bat Kx10 S62"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31530
+          function_code: 3
+          name: "temp_bat_kx10_s63"
+          description: "Temp Bat Kx10 S63"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31552
+          function_code: 3
+          name: "temp_bat_kx10_s64"
+          description: "Temp Bat Kx10 S64"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31574
+          function_code: 3
+          name: "temp_bat_kx10_s65"
+          description: "Temp Bat Kx10 S65"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31596
+          function_code: 3
+          name: "temp_bat_kx10_s66"
+          description: "Temp Bat Kx10 S66"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31618
+          function_code: 3
+          name: "temp_bat_kx10_s67"
+          description: "Temp Bat Kx10 S67"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31640
+          function_code: 3
+          name: "temp_bat_kx10_s68"
+          description: "Temp Bat Kx10 S68"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31662
+          function_code: 3
+          name: "temp_bat_kx10_s69"
+          description: "Temp Bat Kx10 S69"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31684
+          function_code: 3
+          name: "temp_bat_kx10_s70"
+          description: "Temp Bat Kx10 S70"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31706
+          function_code: 3
+          name: "temp_bat_kx10_s71"
+          description: "Temp Bat Kx10 S71"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31728
+          function_code: 3
+          name: "temp_bat_kx10_s72"
+          description: "Temp Bat Kx10 S72"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31750
+          function_code: 3
+          name: "temp_bat_kx10_s73"
+          description: "Temp Bat Kx10 S73"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31772
+          function_code: 3
+          name: "temp_bat_kx10_s74"
+          description: "Temp Bat Kx10 S74"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31794
+          function_code: 3
+          name: "temp_bat_kx10_s75"
+          description: "Temp Bat Kx10 S75"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31816
+          function_code: 3
+          name: "temp_bat_kx10_s76"
+          description: "Temp Bat Kx10 S76"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31838
+          function_code: 3
+          name: "temp_bat_kx10_s77"
+          description: "Temp Bat Kx10 S77"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31860
+          function_code: 3
+          name: "temp_bat_kx10_s78"
+          description: "Temp Bat Kx10 S78"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31882
+          function_code: 3
+          name: "temp_bat_kx10_s79"
+          description: "Temp Bat Kx10 S79"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31904
+          function_code: 3
+          name: "temp_bat_kx10_s80"
+          description: "Temp Bat Kx10 S80"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31926
+          function_code: 3
+          name: "temp_bat_kx10_s81"
+          description: "Temp Bat Kx10 S81"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31948
+          function_code: 3
+          name: "temp_bat_kx10_s82"
+          description: "Temp Bat Kx10 S82"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31970
+          function_code: 3
+          name: "temp_bat_kx10_s83"
+          description: "Temp Bat Kx10 S83"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 31992
+          function_code: 3
+          name: "temp_bat_kx10_s84"
+          description: "Temp Bat Kx10 S84"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32014
+          function_code: 3
+          name: "temp_bat_kx10_s85"
+          description: "Temp Bat Kx10 S85"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32036
+          function_code: 3
+          name: "temp_bat_kx10_s86"
+          description: "Temp Bat Kx10 S86"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32058
+          function_code: 3
+          name: "temp_bat_kx10_s87"
+          description: "Temp Bat Kx10 S87"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32080
+          function_code: 3
+          name: "temp_bat_kx10_s88"
+          description: "Temp Bat Kx10 S88"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32102
+          function_code: 3
+          name: "temp_bat_kx10_s89"
+          description: "Temp Bat Kx10 S89"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32124
+          function_code: 3
+          name: "temp_bat_kx10_s90"
+          description: "Temp Bat Kx10 S90"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32146
+          function_code: 3
+          name: "temp_bat_kx10_s91"
+          description: "Temp Bat Kx10 S91"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32168
+          function_code: 3
+          name: "temp_bat_kx10_s92"
+          description: "Temp Bat Kx10 S92"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32190
+          function_code: 3
+          name: "temp_bat_kx10_s93"
+          description: "Temp Bat Kx10 S93"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32212
+          function_code: 3
+          name: "temp_bat_kx10_s94"
+          description: "Temp Bat Kx10 S94"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32234
+          function_code: 3
+          name: "temp_bat_kx10_s95"
+          description: "Temp Bat Kx10 S95"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32256
+          function_code: 3
+          name: "temp_bat_kx10_s96"
+          description: "Temp Bat Kx10 S96"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32278
+          function_code: 3
+          name: "temp_bat_kx10_s97"
+          description: "Temp Bat Kx10 S97"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32300
+          function_code: 3
+          name: "temp_bat_kx10_s98"
+          description: "Temp Bat Kx10 S98"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32322
+          function_code: 3
+          name: "temp_bat_kx10_s99"
+          description: "Temp Bat Kx10 S99"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32344
+          function_code: 3
+          name: "temp_bat_kx10_s100"
+          description: "Temp Bat Kx10 S100"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32366
+          function_code: 3
+          name: "temp_bat_kx10_s101"
+          description: "Temp Bat Kx10 S101"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+        - register: 32388
+          function_code: 3
+          name: "temp_bat_kx10_s102"
+          description: "Temp Bat Kx10 S102"
+          words: 1
+          datatype: "U16"
+          unit: "K×10"
+          gain: 1
+          flags:
+
+
+
+        - register: 30167
+          function_code: 3
+          name: "state_of_health_s1"
+          description: "State Of Health S1"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30189
+          function_code: 3
+          name: "state_of_health_s2"
+          description: "State Of Health S2"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30211
+          function_code: 3
+          name: "state_of_health_s3"
+          description: "State Of Health S3"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30233
+          function_code: 3
+          name: "state_of_health_s4"
+          description: "State Of Health S4"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30255
+          function_code: 3
+          name: "state_of_health_s5"
+          description: "State Of Health S5"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30277
+          function_code: 3
+          name: "state_of_health_s6"
+          description: "State Of Health S6"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30299
+          function_code: 3
+          name: "state_of_health_s7"
+          description: "State Of Health S7"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30321
+          function_code: 3
+          name: "state_of_health_s8"
+          description: "State Of Health S8"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30343
+          function_code: 3
+          name: "state_of_health_s9"
+          description: "State Of Health S9"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30365
+          function_code: 3
+          name: "state_of_health_s10"
+          description: "State Of Health S10"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30387
+          function_code: 3
+          name: "state_of_health_s11"
+          description: "State Of Health S11"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30409
+          function_code: 3
+          name: "state_of_health_s12"
+          description: "State Of Health S12"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30431
+          function_code: 3
+          name: "state_of_health_s13"
+          description: "State Of Health S13"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30453
+          function_code: 3
+          name: "state_of_health_s14"
+          description: "State Of Health S14"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30475
+          function_code: 3
+          name: "state_of_health_s15"
+          description: "State Of Health S15"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30497
+          function_code: 3
+          name: "state_of_health_s16"
+          description: "State Of Health S16"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30519
+          function_code: 3
+          name: "state_of_health_s17"
+          description: "State Of Health S17"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30541
+          function_code: 3
+          name: "state_of_health_s18"
+          description: "State Of Health S18"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30563
+          function_code: 3
+          name: "state_of_health_s19"
+          description: "State Of Health S19"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30585
+          function_code: 3
+          name: "state_of_health_s20"
+          description: "State Of Health S20"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30607
+          function_code: 3
+          name: "state_of_health_s21"
+          description: "State Of Health S21"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30629
+          function_code: 3
+          name: "state_of_health_s22"
+          description: "State Of Health S22"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30651
+          function_code: 3
+          name: "state_of_health_s23"
+          description: "State Of Health S23"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30673
+          function_code: 3
+          name: "state_of_health_s24"
+          description: "State Of Health S24"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30695
+          function_code: 3
+          name: "state_of_health_s25"
+          description: "State Of Health S25"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30717
+          function_code: 3
+          name: "state_of_health_s26"
+          description: "State Of Health S26"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30739
+          function_code: 3
+          name: "state_of_health_s27"
+          description: "State Of Health S27"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30761
+          function_code: 3
+          name: "state_of_health_s28"
+          description: "State Of Health S28"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30783
+          function_code: 3
+          name: "state_of_health_s29"
+          description: "State Of Health S29"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30805
+          function_code: 3
+          name: "state_of_health_s30"
+          description: "State Of Health S30"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30827
+          function_code: 3
+          name: "state_of_health_s31"
+          description: "State Of Health S31"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30849
+          function_code: 3
+          name: "state_of_health_s32"
+          description: "State Of Health S32"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30871
+          function_code: 3
+          name: "state_of_health_s33"
+          description: "State Of Health S33"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30893
+          function_code: 3
+          name: "state_of_health_s34"
+          description: "State Of Health S34"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30915
+          function_code: 3
+          name: "state_of_health_s35"
+          description: "State Of Health S35"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30937
+          function_code: 3
+          name: "state_of_health_s36"
+          description: "State Of Health S36"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30959
+          function_code: 3
+          name: "state_of_health_s37"
+          description: "State Of Health S37"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 30981
+          function_code: 3
+          name: "state_of_health_s38"
+          description: "State Of Health S38"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31003
+          function_code: 3
+          name: "state_of_health_s39"
+          description: "State Of Health S39"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31025
+          function_code: 3
+          name: "state_of_health_s40"
+          description: "State Of Health S40"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31047
+          function_code: 3
+          name: "state_of_health_s41"
+          description: "State Of Health S41"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31069
+          function_code: 3
+          name: "state_of_health_s42"
+          description: "State Of Health S42"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31091
+          function_code: 3
+          name: "state_of_health_s43"
+          description: "State Of Health S43"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31113
+          function_code: 3
+          name: "state_of_health_s44"
+          description: "State Of Health S44"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31135
+          function_code: 3
+          name: "state_of_health_s45"
+          description: "State Of Health S45"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31157
+          function_code: 3
+          name: "state_of_health_s46"
+          description: "State Of Health S46"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31179
+          function_code: 3
+          name: "state_of_health_s47"
+          description: "State Of Health S47"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31201
+          function_code: 3
+          name: "state_of_health_s48"
+          description: "State Of Health S48"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31223
+          function_code: 3
+          name: "state_of_health_s49"
+          description: "State Of Health S49"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31245
+          function_code: 3
+          name: "state_of_health_s50"
+          description: "State Of Health S50"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31267
+          function_code: 3
+          name: "state_of_health_s51"
+          description: "State Of Health S51"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31289
+          function_code: 3
+          name: "state_of_health_s52"
+          description: "State Of Health S52"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31311
+          function_code: 3
+          name: "state_of_health_s53"
+          description: "State Of Health S53"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31333
+          function_code: 3
+          name: "state_of_health_s54"
+          description: "State Of Health S54"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31355
+          function_code: 3
+          name: "state_of_health_s55"
+          description: "State Of Health S55"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31377
+          function_code: 3
+          name: "state_of_health_s56"
+          description: "State Of Health S56"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31399
+          function_code: 3
+          name: "state_of_health_s57"
+          description: "State Of Health S57"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31421
+          function_code: 3
+          name: "state_of_health_s58"
+          description: "State Of Health S58"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31443
+          function_code: 3
+          name: "state_of_health_s59"
+          description: "State Of Health S59"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31465
+          function_code: 3
+          name: "state_of_health_s60"
+          description: "State Of Health S60"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31487
+          function_code: 3
+          name: "state_of_health_s61"
+          description: "State Of Health S61"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31509
+          function_code: 3
+          name: "state_of_health_s62"
+          description: "State Of Health S62"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31531
+          function_code: 3
+          name: "state_of_health_s63"
+          description: "State Of Health S63"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31553
+          function_code: 3
+          name: "state_of_health_s64"
+          description: "State Of Health S64"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31575
+          function_code: 3
+          name: "state_of_health_s65"
+          description: "State Of Health S65"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31597
+          function_code: 3
+          name: "state_of_health_s66"
+          description: "State Of Health S66"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31619
+          function_code: 3
+          name: "state_of_health_s67"
+          description: "State Of Health S67"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31641
+          function_code: 3
+          name: "state_of_health_s68"
+          description: "State Of Health S68"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31663
+          function_code: 3
+          name: "state_of_health_s69"
+          description: "State Of Health S69"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31685
+          function_code: 3
+          name: "state_of_health_s70"
+          description: "State Of Health S70"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31707
+          function_code: 3
+          name: "state_of_health_s71"
+          description: "State Of Health S71"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31729
+          function_code: 3
+          name: "state_of_health_s72"
+          description: "State Of Health S72"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31751
+          function_code: 3
+          name: "state_of_health_s73"
+          description: "State Of Health S73"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31773
+          function_code: 3
+          name: "state_of_health_s74"
+          description: "State Of Health S74"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31795
+          function_code: 3
+          name: "state_of_health_s75"
+          description: "State Of Health S75"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31817
+          function_code: 3
+          name: "state_of_health_s76"
+          description: "State Of Health S76"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31839
+          function_code: 3
+          name: "state_of_health_s77"
+          description: "State Of Health S77"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31861
+          function_code: 3
+          name: "state_of_health_s78"
+          description: "State Of Health S78"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31883
+          function_code: 3
+          name: "state_of_health_s79"
+          description: "State Of Health S79"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31905
+          function_code: 3
+          name: "state_of_health_s80"
+          description: "State Of Health S80"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31927
+          function_code: 3
+          name: "state_of_health_s81"
+          description: "State Of Health S81"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31949
+          function_code: 3
+          name: "state_of_health_s82"
+          description: "State Of Health S82"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31971
+          function_code: 3
+          name: "state_of_health_s83"
+          description: "State Of Health S83"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 31993
+          function_code: 3
+          name: "state_of_health_s84"
+          description: "State Of Health S84"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32015
+          function_code: 3
+          name: "state_of_health_s85"
+          description: "State Of Health S85"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32037
+          function_code: 3
+          name: "state_of_health_s86"
+          description: "State Of Health S86"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32059
+          function_code: 3
+          name: "state_of_health_s87"
+          description: "State Of Health S87"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32081
+          function_code: 3
+          name: "state_of_health_s88"
+          description: "State Of Health S88"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32103
+          function_code: 3
+          name: "state_of_health_s89"
+          description: "State Of Health S89"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32125
+          function_code: 3
+          name: "state_of_health_s90"
+          description: "State Of Health S90"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32147
+          function_code: 3
+          name: "state_of_health_s91"
+          description: "State Of Health S91"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32169
+          function_code: 3
+          name: "state_of_health_s92"
+          description: "State Of Health S92"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32191
+          function_code: 3
+          name: "state_of_health_s93"
+          description: "State Of Health S93"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32213
+          function_code: 3
+          name: "state_of_health_s94"
+          description: "State Of Health S94"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32235
+          function_code: 3
+          name: "state_of_health_s95"
+          description: "State Of Health S95"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32257
+          function_code: 3
+          name: "state_of_health_s96"
+          description: "State Of Health S96"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32279
+          function_code: 3
+          name: "state_of_health_s97"
+          description: "State Of Health S97"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32301
+          function_code: 3
+          name: "state_of_health_s98"
+          description: "State Of Health S98"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32323
+          function_code: 3
+          name: "state_of_health_s99"
+          description: "State Of Health S99"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32345
+          function_code: 3
+          name: "state_of_health_s100"
+          description: "State Of Health S100"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32367
+          function_code: 3
+          name: "state_of_health_s101"
+          description: "State Of Health S101"
+          words: 1
+          datatype: "U8"
+          unit: "%"
+          gain: 1
+          flags:
+
+        - register: 32389
+          function_code: 3
+          name: "state_of_health_s102"
+          description: "State Of Health S102"
+          words: 1
+          datatype: "U8"
+
+        - register: 30156
+          function_code: 3
+          name: "target_angle_a1_rad_s1"
+          description: "Target Angle A1 Rad S1"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30178
+          function_code: 3
+          name: "target_angle_a1_rad_s2"
+          description: "Target Angle A1 Rad S2"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30200
+          function_code: 3
+          name: "target_angle_a1_rad_s3"
+          description: "Target Angle A1 Rad S3"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30222
+          function_code: 3
+          name: "target_angle_a1_rad_s4"
+          description: "Target Angle A1 Rad S4"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30244
+          function_code: 3
+          name: "target_angle_a1_rad_s5"
+          description: "Target Angle A1 Rad S5"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30266
+          function_code: 3
+          name: "target_angle_a1_rad_s6"
+          description: "Target Angle A1 Rad S6"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30288
+          function_code: 3
+          name: "target_angle_a1_rad_s7"
+          description: "Target Angle A1 Rad S7"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30310
+          function_code: 3
+          name: "target_angle_a1_rad_s8"
+          description: "Target Angle A1 Rad S8"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30332
+          function_code: 3
+          name: "target_angle_a1_rad_s9"
+          description: "Target Angle A1 Rad S9"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30354
+          function_code: 3
+          name: "target_angle_a1_rad_s10"
+          description: "Target Angle A1 Rad S10"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30376
+          function_code: 3
+          name: "target_angle_a1_rad_s11"
+          description: "Target Angle A1 Rad S11"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30398
+          function_code: 3
+          name: "target_angle_a1_rad_s12"
+          description: "Target Angle A1 Rad S12"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30420
+          function_code: 3
+          name: "target_angle_a1_rad_s13"
+          description: "Target Angle A1 Rad S13"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30442
+          function_code: 3
+          name: "target_angle_a1_rad_s14"
+          description: "Target Angle A1 Rad S14"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30464
+          function_code: 3
+          name: "target_angle_a1_rad_s15"
+          description: "Target Angle A1 Rad S15"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30486
+          function_code: 3
+          name: "target_angle_a1_rad_s16"
+          description: "Target Angle A1 Rad S16"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30508
+          function_code: 3
+          name: "target_angle_a1_rad_s17"
+          description: "Target Angle A1 Rad S17"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30530
+          function_code: 3
+          name: "target_angle_a1_rad_s18"
+          description: "Target Angle A1 Rad S18"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30552
+          function_code: 3
+          name: "target_angle_a1_rad_s19"
+          description: "Target Angle A1 Rad S19"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30574
+          function_code: 3
+          name: "target_angle_a1_rad_s20"
+          description: "Target Angle A1 Rad S20"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30596
+          function_code: 3
+          name: "target_angle_a1_rad_s21"
+          description: "Target Angle A1 Rad S21"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30618
+          function_code: 3
+          name: "target_angle_a1_rad_s22"
+          description: "Target Angle A1 Rad S22"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30640
+          function_code: 3
+          name: "target_angle_a1_rad_s23"
+          description: "Target Angle A1 Rad S23"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30662
+          function_code: 3
+          name: "target_angle_a1_rad_s24"
+          description: "Target Angle A1 Rad S24"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30684
+          function_code: 3
+          name: "target_angle_a1_rad_s25"
+          description: "Target Angle A1 Rad S25"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30706
+          function_code: 3
+          name: "target_angle_a1_rad_s26"
+          description: "Target Angle A1 Rad S26"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30728
+          function_code: 3
+          name: "target_angle_a1_rad_s27"
+          description: "Target Angle A1 Rad S27"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30750
+          function_code: 3
+          name: "target_angle_a1_rad_s28"
+          description: "Target Angle A1 Rad S28"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30772
+          function_code: 3
+          name: "target_angle_a1_rad_s29"
+          description: "Target Angle A1 Rad S29"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30794
+          function_code: 3
+          name: "target_angle_a1_rad_s30"
+          description: "Target Angle A1 Rad S30"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30816
+          function_code: 3
+          name: "target_angle_a1_rad_s31"
+          description: "Target Angle A1 Rad S31"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30838
+          function_code: 3
+          name: "target_angle_a1_rad_s32"
+          description: "Target Angle A1 Rad S32"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30860
+          function_code: 3
+          name: "target_angle_a1_rad_s33"
+          description: "Target Angle A1 Rad S33"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30882
+          function_code: 3
+          name: "target_angle_a1_rad_s34"
+          description: "Target Angle A1 Rad S34"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30904
+          function_code: 3
+          name: "target_angle_a1_rad_s35"
+          description: "Target Angle A1 Rad S35"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30926
+          function_code: 3
+          name: "target_angle_a1_rad_s36"
+          description: "Target Angle A1 Rad S36"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30948
+          function_code: 3
+          name: "target_angle_a1_rad_s37"
+          description: "Target Angle A1 Rad S37"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30970
+          function_code: 3
+          name: "target_angle_a1_rad_s38"
+          description: "Target Angle A1 Rad S38"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 30992
+          function_code: 3
+          name: "target_angle_a1_rad_s39"
+          description: "Target Angle A1 Rad S39"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31014
+          function_code: 3
+          name: "target_angle_a1_rad_s40"
+          description: "Target Angle A1 Rad S40"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31036
+          function_code: 3
+          name: "target_angle_a1_rad_s41"
+          description: "Target Angle A1 Rad S41"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31058
+          function_code: 3
+          name: "target_angle_a1_rad_s42"
+          description: "Target Angle A1 Rad S42"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31080
+          function_code: 3
+          name: "target_angle_a1_rad_s43"
+          description: "Target Angle A1 Rad S43"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31102
+          function_code: 3
+          name: "target_angle_a1_rad_s44"
+          description: "Target Angle A1 Rad S44"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31124
+          function_code: 3
+          name: "target_angle_a1_rad_s45"
+          description: "Target Angle A1 Rad S45"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31146
+          function_code: 3
+          name: "target_angle_a1_rad_s46"
+          description: "Target Angle A1 Rad S46"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31168
+          function_code: 3
+          name: "target_angle_a1_rad_s47"
+          description: "Target Angle A1 Rad S47"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31190
+          function_code: 3
+          name: "target_angle_a1_rad_s48"
+          description: "Target Angle A1 Rad S48"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31212
+          function_code: 3
+          name: "target_angle_a1_rad_s49"
+          description: "Target Angle A1 Rad S49"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31234
+          function_code: 3
+          name: "target_angle_a1_rad_s50"
+          description: "Target Angle A1 Rad S50"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31256
+          function_code: 3
+          name: "target_angle_a1_rad_s51"
+          description: "Target Angle A1 Rad S51"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31278
+          function_code: 3
+          name: "target_angle_a1_rad_s52"
+          description: "Target Angle A1 Rad S52"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31300
+          function_code: 3
+          name: "target_angle_a1_rad_s53"
+          description: "Target Angle A1 Rad S53"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31322
+          function_code: 3
+          name: "target_angle_a1_rad_s54"
+          description: "Target Angle A1 Rad S54"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31344
+          function_code: 3
+          name: "target_angle_a1_rad_s55"
+          description: "Target Angle A1 Rad S55"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31366
+          function_code: 3
+          name: "target_angle_a1_rad_s56"
+          description: "Target Angle A1 Rad S56"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31388
+          function_code: 3
+          name: "target_angle_a1_rad_s57"
+          description: "Target Angle A1 Rad S57"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31410
+          function_code: 3
+          name: "target_angle_a1_rad_s58"
+          description: "Target Angle A1 Rad S58"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31432
+          function_code: 3
+          name: "target_angle_a1_rad_s59"
+          description: "Target Angle A1 Rad S59"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31454
+          function_code: 3
+          name: "target_angle_a1_rad_s60"
+          description: "Target Angle A1 Rad S60"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31476
+          function_code: 3
+          name: "target_angle_a1_rad_s61"
+          description: "Target Angle A1 Rad S61"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31498
+          function_code: 3
+          name: "target_angle_a1_rad_s62"
+          description: "Target Angle A1 Rad S62"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31520
+          function_code: 3
+          name: "target_angle_a1_rad_s63"
+          description: "Target Angle A1 Rad S63"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31542
+          function_code: 3
+          name: "target_angle_a1_rad_s64"
+          description: "Target Angle A1 Rad S64"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31564
+          function_code: 3
+          name: "target_angle_a1_rad_s65"
+          description: "Target Angle A1 Rad S65"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31586
+          function_code: 3
+          name: "target_angle_a1_rad_s66"
+          description: "Target Angle A1 Rad S66"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31608
+          function_code: 3
+          name: "target_angle_a1_rad_s67"
+          description: "Target Angle A1 Rad S67"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31630
+          function_code: 3
+          name: "target_angle_a1_rad_s68"
+          description: "Target Angle A1 Rad S68"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31652
+          function_code: 3
+          name: "target_angle_a1_rad_s69"
+          description: "Target Angle A1 Rad S69"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31674
+          function_code: 3
+          name: "target_angle_a1_rad_s70"
+          description: "Target Angle A1 Rad S70"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31696
+          function_code: 3
+          name: "target_angle_a1_rad_s71"
+          description: "Target Angle A1 Rad S71"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31718
+          function_code: 3
+          name: "target_angle_a1_rad_s72"
+          description: "Target Angle A1 Rad S72"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31740
+          function_code: 3
+          name: "target_angle_a1_rad_s73"
+          description: "Target Angle A1 Rad S73"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31762
+          function_code: 3
+          name: "target_angle_a1_rad_s74"
+          description: "Target Angle A1 Rad S74"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31784
+          function_code: 3
+          name: "target_angle_a1_rad_s75"
+          description: "Target Angle A1 Rad S75"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31806
+          function_code: 3
+          name: "target_angle_a1_rad_s76"
+          description: "Target Angle A1 Rad S76"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31828
+          function_code: 3
+          name: "target_angle_a1_rad_s77"
+          description: "Target Angle A1 Rad S77"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31850
+          function_code: 3
+          name: "target_angle_a1_rad_s78"
+          description: "Target Angle A1 Rad S78"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31872
+          function_code: 3
+          name: "target_angle_a1_rad_s79"
+          description: "Target Angle A1 Rad S79"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31894
+          function_code: 3
+          name: "target_angle_a1_rad_s80"
+          description: "Target Angle A1 Rad S80"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31916
+          function_code: 3
+          name: "target_angle_a1_rad_s81"
+          description: "Target Angle A1 Rad S81"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31938
+          function_code: 3
+          name: "target_angle_a1_rad_s82"
+          description: "Target Angle A1 Rad S82"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31960
+          function_code: 3
+          name: "target_angle_a1_rad_s83"
+          description: "Target Angle A1 Rad S83"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 31982
+          function_code: 3
+          name: "target_angle_a1_rad_s84"
+          description: "Target Angle A1 Rad S84"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32004
+          function_code: 3
+          name: "target_angle_a1_rad_s85"
+          description: "Target Angle A1 Rad S85"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32026
+          function_code: 3
+          name: "target_angle_a1_rad_s86"
+          description: "Target Angle A1 Rad S86"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32048
+          function_code: 3
+          name: "target_angle_a1_rad_s87"
+          description: "Target Angle A1 Rad S87"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32070
+          function_code: 3
+          name: "target_angle_a1_rad_s88"
+          description: "Target Angle A1 Rad S88"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32092
+          function_code: 3
+          name: "target_angle_a1_rad_s89"
+          description: "Target Angle A1 Rad S89"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32114
+          function_code: 3
+          name: "target_angle_a1_rad_s90"
+          description: "Target Angle A1 Rad S90"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32136
+          function_code: 3
+          name: "target_angle_a1_rad_s91"
+          description: "Target Angle A1 Rad S91"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32158
+          function_code: 3
+          name: "target_angle_a1_rad_s92"
+          description: "Target Angle A1 Rad S92"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32180
+          function_code: 3
+          name: "target_angle_a1_rad_s93"
+          description: "Target Angle A1 Rad S93"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32202
+          function_code: 3
+          name: "target_angle_a1_rad_s94"
+          description: "Target Angle A1 Rad S94"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32224
+          function_code: 3
+          name: "target_angle_a1_rad_s95"
+          description: "Target Angle A1 Rad S95"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32246
+          function_code: 3
+          name: "target_angle_a1_rad_s96"
+          description: "Target Angle A1 Rad S96"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32268
+          function_code: 3
+          name: "target_angle_a1_rad_s97"
+          description: "Target Angle A1 Rad S97"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32290
+          function_code: 3
+          name: "target_angle_a1_rad_s98"
+          description: "Target Angle A1 Rad S98"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32312
+          function_code: 3
+          name: "target_angle_a1_rad_s99"
+          description: "Target Angle A1 Rad S99"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32334
+          function_code: 3
+          name: "target_angle_a1_rad_s100"
+          description: "Target Angle A1 Rad S100"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32356
+          function_code: 3
+          name: "target_angle_a1_rad_s101"
+          description: "Target Angle A1 Rad S101"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+
+        - register: 32378
+          function_code: 3
+          name: "target_angle_a1_rad_s102"
+          description: "Target Angle A1 Rad S102"
+          words: 2
+          datatype: "F32BE"
+          unit: "rad"
+          gain: 1
+          flags:
+storage:
+  local:
+    influxdb2:
+      bucket: condor_pelvin
+      measurement: trackers-test
+  remote:
+    influxdb2:
+      bucket: andes_solar_condor_pelvin
+      measurement: trackers-test
